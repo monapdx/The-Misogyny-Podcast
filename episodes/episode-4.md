@@ -1,3 +1,9 @@
+---
+title: "HOMOSEXUALITY IS A MENTAL ILLNESS"
+category: broadcast
+tags: [homosexuality, mental illness, public health]
+---
+
 # EPISODE 4: HOMOSEXUALITY IS A MENTAL ILLNESS
 
 So in this episode, I’d like to address a common question I receive in my inbox with listeners because I’m tired of having to answer it every time it comes up individually. 

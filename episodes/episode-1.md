@@ -1,3 +1,9 @@
+---
+title: "MEN AND WOMEN ARE NOT THE SAME"
+category: broadcast
+tags: [gender, male superiority, sex]
+---
+
 # EPISODE 1: MEN AND WOMEN ARE NOT THE SAME
 
 Look, no one can say we didn't give it a fair run. 

@@ -1,3 +1,9 @@
+---
+title: "GARY’S DILEMMA"
+category: interview
+tags: [interview, marriage, dating, relationships, infertility]
+---
+
 # EPISODE 3: GARY’S DILEMMA
 
 Today, we'll start with a call-in from one of our regular listeners, Gary. 

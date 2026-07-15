@@ -1,3 +1,9 @@
+---
+title: "RAPE IS A LIBERAL LIE"
+category: broadcast
+tags: [rape, sex, liberalism]
+---
+
 # EPISODE 5: RAPE IS A LIBERAL LIE
 
 Today, we’re going to be discussing the topic of rape and addressing several huge misconceptions most people today have about it. This is another case where we have liberals to thank for all the misinformation that’s out there.

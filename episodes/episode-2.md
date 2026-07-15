@@ -1,3 +1,9 @@
+---
+title: "SANCTITY OF MARRIAGE & MOTHERHOOD"
+category: podcast
+tags: [women, pregnancy, motherhood, marriage]
+---
+
 # EPISODE 2: SANCTITY OF MARRIAGE & MOTHERHOOD
 
 After our last show aired, I received a lot of emails and voicemail from men who felt like they'd been waiting for someone to say a lot of the things I said out loud for their entire lives. 
