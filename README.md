@@ -1,6 +1,13 @@
 # The Misogyny Podcast
 
-<img align="center" src="./assets/banner.png">
+## A Message From the Host
+
+<img align="left" src="./assets/mic.gif" width="100"><p align="left">My name is **Derek Vale**, and I'm the host of *The Misogyny Podcast*.</p>
+
+---
+## Content Warning
+
+## Disclaimer
 
 ## Episodes
 
@@ -18,6 +25,4 @@
 |    10       |          |
 
 
-## Podcast Description
 
-<img align="left" src="./assets/mic.gif" width="200"><p align="left">Brief description goes here.</p>
