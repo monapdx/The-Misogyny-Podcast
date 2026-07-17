@@ -1,0 +1,42 @@
+name: "Leave an Angry Voicemail"
+description: "Tell Derek exactly what you think of him. He may regret giving you the number."
+title: "[ANGRY VOICEMAIL] "
+labels:
+  - "call-in: angry"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for calling **The Misogyny Podcast**. This is a fictional, participatory satire project. Stay in character if you like—but do not threaten or harass real people.
+
+  - type: input
+    id: caller-name
+    attributes:
+      label: Name or pseudonym
+      placeholder: "Anonymous, regrettably, is allowed"
+    validations:
+      required: true
+
+  - type: input
+    id: episode
+    attributes:
+      label: Episode
+      description: Which episode—or specific thing Derek said—set you off?
+      placeholder: "Episode 03: Derek Discovers Consequences"
+
+  - type: textarea
+    id: message
+    attributes:
+      label: Your voicemail
+      placeholder: "Derek, you absolute..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Permission
+      options:
+        - label: Derek may quote, answer, distort, or publicly embarrass this fictional submission in a future episode.
+          required: true
+

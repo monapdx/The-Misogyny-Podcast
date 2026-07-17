@@ -1,0 +1,63 @@
+name: "Pitch Yourself as a Guest"
+description: "Request a seat across from Derek's unnecessarily expensive microphone."
+title: "[GUEST PITCH] "
+labels:
+  - "call-in: guest pitch"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Think you belong on **The Misogyny Podcast**? Convince Derek. Fictional characters and satirical personas are encouraged. Do not impersonate a real person.
+
+  - type: input
+    id: guest-name
+    attributes:
+      label: Guest name or pseudonym
+      placeholder: "Dr. Evan Reason"
+    validations:
+      required: true
+
+  - type: input
+    id: credentials
+    attributes:
+      label: Credentials
+      description: Real, invented, self-awarded, or downloaded from somewhere questionable.
+      placeholder: "Host of a podcast with 14 subscribers"
+
+  - type: textarea
+    id: topic
+    attributes:
+      label: What do you want to discuss?
+      placeholder: "I would like to explain why..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: pitch
+    attributes:
+      label: Why should Derek invite you?
+      placeholder: "I agree with Derek about nearly everything, except..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your position on Derek
+      options:
+        - Supporter
+        - Critic
+        - Expert, allegedly
+        - Former associate
+        - It's complicated
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Permission
+      options:
+        - label: This fictional character or persona may appear in a future episode.
+          required: true
+

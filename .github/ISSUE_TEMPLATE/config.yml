@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "About this fictional project"
+    url: "https://github.com/OWNER/REPOSITORY#readme"
+    about: "Read the content warning, disclaimer, and participation guidelines before calling in."

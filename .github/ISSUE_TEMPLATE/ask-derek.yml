@@ -1,0 +1,49 @@
+name: "Ask Derek Anything"
+description: "Request advice from a man who has never mistaken confidence for competence."
+title: "[ASK DEREK] "
+labels:
+  - "call-in: question"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit a fictional listener question for Derek to answer in a future episode. Please do not rely on Derek Vale for actual life advice.
+
+  - type: input
+    id: caller-name
+    attributes:
+      label: Name or pseudonym
+      placeholder: "Confused in Cleveland"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      options:
+        - Dating and relationships
+        - Sex and gender
+        - Politics and culture
+        - Work and money
+        - Personal grievance
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      placeholder: "Dear Derek, my girlfriend says..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Permission
+      options:
+        - label: Derek may answer this fictional question in a future episode with his customary lack of qualification.
+          required: true
+

@@ -1,0 +1,51 @@
+name: "Challenge a Claim"
+description: "Bring facts, reasoning, or the context Derek conveniently misplaced."
+title: "[CHALLENGE] "
+labels:
+  - "call-in: challenge"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You have reached **The Misogyny Podcast Department of Unwanted Context**. This is a fictional, participatory satire project.
+
+  - type: input
+    id: caller-name
+    attributes:
+      label: Name or pseudonym
+      placeholder: "Your name"
+    validations:
+      required: true
+
+  - type: input
+    id: claim
+    attributes:
+      label: Derek's claim
+      description: Quote or briefly summarize the claim you are challenging.
+      placeholder: "Derek claimed that..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: response
+    attributes:
+      label: Your response
+      description: Explain what Derek got wrong and why.
+      placeholder: "The problem with that claim is..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources or supporting material
+      description: Optional links, quotations, or other context.
+
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Permission
+      options:
+        - label: Derek may respond to this fictional submission in a future episode, even if he responds badly.
+          required: true
+
