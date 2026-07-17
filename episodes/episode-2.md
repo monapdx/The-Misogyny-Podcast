@@ -6,7 +6,7 @@ tags: [women, pregnancy, motherhood, marriage]
 
 # EPISODE 2: SANCTITY OF MARRIAGE & MOTHERHOOD
 
-<img src="./assets/episode-2-quote.gif">
+<img align="center" src="../assets/episode-2-quote.gif">
 
 After our last show aired, I received a lot of emails and voicemail from men who felt like they'd been waiting for someone to say a lot of the things I said out loud for their entire lives. 
 
