@@ -6,6 +6,8 @@ tags: [interview, marriage, dating, relationships, infertility]
 
 # EPISODE 3: GARY’S DILEMMA
 
+<img src="../assets/episode-3-quote.gif">
+
 Today, we'll start with a call-in from one of our regular listeners, Gary. 
 
 Let's all welcome him to the show. 
