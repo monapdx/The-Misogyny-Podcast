@@ -7,6 +7,8 @@
 ---
 ## Content Warning
 
+> Apparently, some listeners require advance notice before encountering ideas that make them uncomfortable, so here it is: this program contains **explicit misogyny**, sexual language, **dehumanization**, reproductive coercion, forced pregnancy, **sexual violence**, homophobia, references to childbirth and death, and opinions about women delivered without the usual apologies, euphemisms, or permission slips. If any of that sounds *“harmful”* or *“triggering”* to you, exercise whatever remains of your personal agency and stop listening—though I suspect your outrage will keep you here.
+
 ## Disclaimer
 
 ## Episodes
