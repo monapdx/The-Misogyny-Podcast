@@ -2,14 +2,18 @@
 
 ## A Message From the Host
 
-<img align="left" src="./assets/mic.gif" width="100"><p align="left">My name is **Derek Vale**, and I'm the host of *The Misogyny Podcast*.</p>
+<img align="left" src="./assets/mic.gif" width="100"><p align="left">My name is **Derek Vale**, and I'm the creator and host of *The Misogyny Podcast*.
+
+I created *The Misogyny Podcast* because somebody had to say out loud what **millions of men** have been *thinking quietly for years*. I’m not a politician, an academic, or one of the credentialed cowards paid to make simple truths sound complicated. 
+
+I’m just a man willing to examine sex, power, family, and the natural order without apologizing every time reality hurts someone’s feelings. You may find my conclusions offensive. That does not make them incorrect; it merely means you have been trained to reject them before considering whether they are true.
+
+This show is for men who are tired of being lectured, women courageous enough to listen, and anyone willing to question the *increasingly fragile* **mythology of equality**. I welcome praise, criticism, questions, and guest requests through the call-in forms—although submitting a response does not guarantee that I will treat it with the seriousness you believe it deserves.</p>
 
 ---
 ## Content Warning
 
 > Apparently, some listeners require advance notice before encountering ideas that make them uncomfortable, so here it is: this program contains **explicit misogyny**, sexual language, **dehumanization**, reproductive coercion, forced pregnancy, **sexual violence**, homophobia, references to childbirth and death, and opinions about women delivered without the usual apologies, euphemisms, or permission slips. If any of that sounds *“harmful”* or *“triggering”* to you, exercise whatever remains of your personal agency and stop listening—though I suspect your outrage will keep you here.
-
-## Disclaimer
 
 ## Episodes
 
@@ -27,4 +31,4 @@
 |    10       |          |
 
 
-
+## Disclaimer
