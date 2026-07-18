@@ -8,7 +8,9 @@ I created *The Misogyny Podcast* because somebody had to say out loud what **mil
 
 I’m just a man willing to examine sex, power, family, and the natural order without apologizing every time reality hurts someone’s feelings. You may find my conclusions offensive. That does not make them incorrect; it merely means you have been trained to reject them before considering whether they are true.
 
-This show is for men who are tired of being lectured, women courageous enough to listen, and anyone willing to question the *increasingly fragile* **mythology of equality**. I welcome praise, criticism, questions, and guest requests through the call-in forms—although submitting a response does not guarantee that I will treat it with the seriousness you believe it deserves.</p>
+This show is for men who are tired of being lectured, women courageous enough to listen, and anyone willing to question the *increasingly fragile* **mythology of equality**. 
+
+I welcome [praise](), [criticism](https://github.com/monapdx/The-Misogyny-Podcast/issues/new?template=angry-voicemail.yml), [questions](), and [guest requests]() through the [call-in forms](https://github.com/monapdx/The-Misogyny-Podcast/issues/new/choose) — although submitting a response does not guarantee that I will treat it with the seriousness you believe it deserves.</p>
 
 ---
 ## Content Warning
