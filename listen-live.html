@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Live Broadcast Player</title>
+
+  <style>
+    :root {
+      --player-height: 92px;
+      --background: #111111;
+      --text: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #00e5ff;
+      --border: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 40px;
+      padding-bottom: calc(var(--player-height) + 40px);
+
+      color: #111111;
+      background: #f3f3f3;
+
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .demo-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* ==============================
+       FIXED PLAYER STRIP
+       ============================== */
+
+    .audio-player {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 9999;
+
+      min-height: var(--player-height);
+      padding: 14px 22px;
+
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 22px;
+
+      color: var(--text);
+      background: var(--background);
+
+      border-top: 4px solid var(--border);
+      box-shadow: 0 -6px 24px rgb(0 0 0 / 30%);
+    }
+
+    /* ==============================
+       PLAY / PAUSE BUTTON
+       ============================== */
+
+    .play-button {
+      width: 58px;
+      height: 58px;
+      padding: 0;
+
+      display: grid;
+      place-items: center;
+
+      color: #000000;
+      background: var(--accent);
+
+      border: 3px solid #ffffff;
+      border-radius: 50%;
+
+      cursor: pointer;
+
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 1;
+
+      transition:
+        transform 150ms ease,
+        background-color 150ms ease;
+    }
+
+    .play-button:hover {
+      background: #ffffff;
+      transform: scale(1.08);
+    }
+
+    .play-button:active {
+      transform: scale(0.95);
+    }
+
+    .play-button:focus-visible {
+      outline: 4px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .play-icon {
+      display: block;
+      transform: translateX(2px);
+    }
+
+    .audio-player.is-playing .play-icon {
+      transform: none;
+    }
+
+    /* ==============================
+       BROADCAST INFORMATION
+       ============================== */
+
+    .track-details {
+      min-width: 0;
+    }
+
+    .live-label {
+      margin-bottom: 5px;
+
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      color: var(--muted);
+
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .audio-player.is-playing .live-label {
+      color: var(--accent);
+    }
+
+    .live-dot {
+      width: 9px;
+      height: 9px;
+
+      flex: 0 0 auto;
+
+      background: var(--muted);
+      border-radius: 50%;
+    }
+
+    .audio-player.is-playing .live-dot {
+      background: var(--accent);
+      box-shadow: 0 0 12px var(--accent);
+
+      animation: live-pulse 1.2s ease-in-out infinite;
+    }
+
+    .track-title {
+      margin: 0;
+
+      overflow: hidden;
+
+      font-size: 1rem;
+      font-weight: 800;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .track-subtitle {
+      margin: 4px 0 0;
+
+      overflow: hidden;
+
+      color: var(--muted);
+
+      font-size: 0.85rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    /* ==============================
+       PLAYER TOOLS
+       ============================== */
+
+    .player-tools {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    /* ==============================
+       AUDIO INDICATORS
+       ============================== */
+
+    .equalizer {
+      height: 30px;
+
+      display: flex;
+      align-items: flex-end;
+      gap: 4px;
+    }
+
+    .equalizer span {
+      width: 5px;
+      height: 5px;
+
+      display: block;
+
+      background: #666666;
+      border-radius: 2px;
+
+      animation: none;
+    }
+
+    .audio-player.is-playing .equalizer span {
+      background: var(--accent);
+      animation: equalizer-bounce 650ms ease-in-out infinite alternate;
+    }
+
+    .audio-player.is-playing .equalizer span:nth-child(1) {
+      animation-delay: 0ms;
+    }
+
+    .audio-player.is-playing .equalizer span:nth-child(2) {
+      animation-delay: 180ms;
+    }
+
+    .audio-player.is-playing .equalizer span:nth-child(3) {
+      animation-delay: 80ms;
+    }
+
+    .audio-player.is-playing .equalizer span:nth-child(4) {
+      animation-delay: 260ms;
+    }
+
+    .audio-player.is-playing .equalizer span:nth-child(5) {
+      animation-delay: 130ms;
+    }
+
+    /* ==============================
+       VOLUME
+       ============================== */
+
+    .volume-control {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .volume-icon {
+      width: 24px;
+      text-align: center;
+    }
+
+    .volume-slider {
+      --volume-fill: 75%;
+
+      width: 105px;
+      height: 7px;
+      margin: 0;
+
+      appearance: none;
+
+      background:
+        linear-gradient(
+          to right,
+          var(--accent) 0%,
+          var(--accent) var(--volume-fill),
+          #555555 var(--volume-fill),
+          #555555 100%
+        );
+
+      border: 1px solid #777777;
+      border-radius: 999px;
+
+      cursor: pointer;
+    }
+
+    .volume-slider::-webkit-slider-thumb {
+      width: 17px;
+      height: 17px;
+
+      appearance: none;
+
+      background: #ffffff;
+      border: 3px solid var(--accent);
+      border-radius: 50%;
+    }
+
+    .volume-slider::-moz-range-thumb {
+      width: 13px;
+      height: 13px;
+
+      background: #ffffff;
+      border: 3px solid var(--accent);
+      border-radius: 50%;
+    }
+
+    .volume-slider:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    /* ==============================
+       ANIMATIONS
+       ============================== */
+
+    @keyframes live-pulse {
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.35;
+        transform: scale(0.7);
+      }
+    }
+
+    @keyframes equalizer-bounce {
+      from {
+        height: 5px;
+      }
+
+      to {
+        height: 28px;
+      }
+    }
+
+    /* ==============================
+       MOBILE
+       ============================== */
+
+    @media (max-width: 700px) {
+      body {
+        padding-bottom: 140px;
+      }
+
+      .audio-player {
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 14px;
+      }
+
+      .player-tools {
+        grid-column: 1 / -1;
+
+        justify-content: flex-end;
+      }
+
+      .track-subtitle {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="demo-content">
+    <h1>Example Web Page</h1>
+
+    <p>
+      This represents the main website. The live broadcast player remains
+      fixed along the bottom of the screen.
+    </p>
+
+    <p>
+      Press the play button to simulate tuning into the live broadcast.
+    </p>
+  </main>
+
+  <section
+    class="audio-player"
+    id="audioPlayer"
+    aria-label="Live broadcast player"
+  >
+    <button
+      class="play-button"
+      id="playButton"
+      type="button"
+      aria-label="Play live broadcast"
+      aria-pressed="false"
+    >
+      <span class="play-icon" id="playIcon" aria-hidden="true">▶</span>
+    </button>
+
+    <div class="track-details">
+      <div class="live-label">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span id="statusText">Broadcast paused</span>
+      </div>
+
+      <h2 class="track-title">
+        The Misogyny Podcast
+      </h2>
+
+      <p class="track-subtitle">
+        <strong>EPISODE 8 |</strong>
+        <em>Everything You Think You Know About Sex Is Wrong</em>
+      </p>
+    </div>
+
+    <div class="player-tools">
+      <div class="equalizer" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <label class="volume-control">
+        <span
+          class="volume-icon"
+          id="volumeIcon"
+          aria-hidden="true"
+        >
+          🔊
+        </span>
+
+        <input
+          class="volume-slider"
+          id="volumeSlider"
+          type="range"
+          min="0"
+          max="100"
+          value="75"
+          aria-label="Volume"
+        />
+      </label>
+    </div>
+  </section>
+
+  <script>
+    const audioPlayer = document.getElementById("audioPlayer");
+    const playButton = document.getElementById("playButton");
+    const playIcon = document.getElementById("playIcon");
+    const statusText = document.getElementById("statusText");
+
+    const volumeSlider = document.getElementById("volumeSlider");
+    const volumeIcon = document.getElementById("volumeIcon");
+
+    let isPlaying = false;
+
+    function updatePlayerState() {
+      audioPlayer.classList.toggle("is-playing", isPlaying);
+
+      playIcon.textContent = isPlaying ? "❚❚" : "▶";
+      statusText.textContent = isPlaying
+        ? "Listening live"
+        : "Broadcast paused";
+
+      playButton.setAttribute(
+        "aria-label",
+        isPlaying
+          ? "Pause live broadcast"
+          : "Play live broadcast"
+      );
+
+      playButton.setAttribute(
+        "aria-pressed",
+        String(isPlaying)
+      );
+    }
+
+    function togglePlayback() {
+      isPlaying = !isPlaying;
+      updatePlayerState();
+    }
+
+    function updateVolume() {
+      const volume = Number(volumeSlider.value);
+
+      volumeSlider.style.setProperty(
+        "--volume-fill",
+        `${volume}%`
+      );
+
+      if (volume === 0) {
+        volumeIcon.textContent = "🔇";
+      } else if (volume < 50) {
+        volumeIcon.textContent = "🔉";
+      } else {
+        volumeIcon.textContent = "🔊";
+      }
+    }
+
+    playButton.addEventListener("click", togglePlayback);
+    volumeSlider.addEventListener("input", updateVolume);
+
+    updatePlayerState();
+    updateVolume();
+  </script>
+</body>
+</html>
