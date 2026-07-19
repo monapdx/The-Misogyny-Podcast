@@ -37,3 +37,8 @@ I do ask that you please see the **[FAQ](FAQ.md)** before leaving a nasty voice 
 <!-- EPISODES_TABLE_END -->
 
 ## Disclaimer
+
+*The Misogyny Podcast* is a work of fiction, satire, parody, and dark humor. Derek Vale is a fictional character, and his statements, beliefs, advice, and alleged experiences do not represent the views of the author. The project depicts misogyny, sexual violence, homophobia, reproductive coercion, and other forms of prejudice in order to examine and ridicule the rhetoric used to excuse them—it does not endorse that rhetoric.
+
+All episodes, listener submissions, interviews, testimonials, and interactions presented as part of the podcast are fictional unless explicitly identified otherwise. Any resemblance to actual people or events is coincidental. This project is intended for mature audiences and may contain disturbing or offensive material. Reader discretion is strongly advised.
+
