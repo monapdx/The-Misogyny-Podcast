@@ -1,499 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Live Broadcast Player</title>
-
-  <style>
-    :root {
-      --player-height: 92px;
-      --background: #111111;
-      --text: #ffffff;
-      --muted: #aaaaaa;
-      --accent: #00e5ff;
-      --border: #ffffff;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      min-height: 100vh;
-      margin: 0;
-      padding: 40px;
-      padding-bottom: calc(var(--player-height) + 40px);
-
-      color: #111111;
-      background: #f3f3f3;
-
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .demo-content {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    /* ==============================
-       FIXED PLAYER STRIP
-       ============================== */
-
-    .audio-player {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 9999;
-
-      min-height: var(--player-height);
-      padding: 14px 22px;
-
-      display: grid;
-      grid-template-columns: auto minmax(0, 1fr) auto;
-      align-items: center;
-      gap: 22px;
-
-      color: var(--text);
-      background: var(--background);
-
-      border-top: 4px solid var(--border);
-      box-shadow: 0 -6px 24px rgb(0 0 0 / 30%);
-    }
-
-    /* ==============================
-       PLAY / PAUSE BUTTON
-       ============================== */
-
-    .play-button {
-      width: 58px;
-      height: 58px;
-      padding: 0;
-
-      display: grid;
-      place-items: center;
-
-      color: #000000;
-      background: var(--accent);
-
-      border: 3px solid #ffffff;
-      border-radius: 50%;
-
-      cursor: pointer;
-
-      font-size: 22px;
-      font-weight: 900;
-      line-height: 1;
-
-      transition:
-        transform 150ms ease,
-        background-color 150ms ease;
-    }
-
-    .play-button:hover {
-      background: #ffffff;
-      transform: scale(1.08);
-    }
-
-    .play-button:active {
-      transform: scale(0.95);
-    }
-
-    .play-button:focus-visible {
-      outline: 4px solid var(--accent);
-      outline-offset: 4px;
-    }
-
-    .play-icon {
-      display: block;
-      transform: translateX(2px);
-    }
-
-    .audio-player.is-playing .play-icon {
-      transform: none;
-    }
-
-    /* ==============================
-       BROADCAST INFORMATION
-       ============================== */
-
-    .track-details {
-      min-width: 0;
-    }
-
-    .live-label {
-      margin-bottom: 5px;
-
-      display: flex;
-      align-items: center;
-      gap: 8px;
-
-      color: var(--muted);
-
-      font-size: 0.72rem;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    .audio-player.is-playing .live-label {
-      color: var(--accent);
-    }
-
-    .live-dot {
-      width: 9px;
-      height: 9px;
-
-      flex: 0 0 auto;
-
-      background: var(--muted);
-      border-radius: 50%;
-    }
-
-    .audio-player.is-playing .live-dot {
-      background: var(--accent);
-      box-shadow: 0 0 12px var(--accent);
-
-      animation: live-pulse 1.2s ease-in-out infinite;
-    }
-
-    .track-title {
-      margin: 0;
-
-      overflow: hidden;
-
-      font-size: 1rem;
-      font-weight: 800;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-
-    .track-subtitle {
-      margin: 4px 0 0;
-
-      overflow: hidden;
-
-      color: var(--muted);
-
-      font-size: 0.85rem;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-
-    /* ==============================
-       PLAYER TOOLS
-       ============================== */
-
-    .player-tools {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    /* ==============================
-       AUDIO INDICATORS
-       ============================== */
-
-    .equalizer {
-      height: 30px;
-
-      display: flex;
-      align-items: flex-end;
-      gap: 4px;
-    }
-
-    .equalizer span {
-      width: 5px;
-      height: 5px;
-
-      display: block;
-
-      background: #666666;
-      border-radius: 2px;
-
-      animation: none;
-    }
-
-    .audio-player.is-playing .equalizer span {
-      background: var(--accent);
-      animation: equalizer-bounce 650ms ease-in-out infinite alternate;
-    }
-
-    .audio-player.is-playing .equalizer span:nth-child(1) {
-      animation-delay: 0ms;
-    }
-
-    .audio-player.is-playing .equalizer span:nth-child(2) {
-      animation-delay: 180ms;
-    }
-
-    .audio-player.is-playing .equalizer span:nth-child(3) {
-      animation-delay: 80ms;
-    }
-
-    .audio-player.is-playing .equalizer span:nth-child(4) {
-      animation-delay: 260ms;
-    }
-
-    .audio-player.is-playing .equalizer span:nth-child(5) {
-      animation-delay: 130ms;
-    }
-
-    /* ==============================
-       VOLUME
-       ============================== */
-
-    .volume-control {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .volume-icon {
-      width: 24px;
-      text-align: center;
-    }
-
-    .volume-slider {
-      --volume-fill: 75%;
-
-      width: 105px;
-      height: 7px;
-      margin: 0;
-
-      appearance: none;
-
-      background:
-        linear-gradient(
-          to right,
-          var(--accent) 0%,
-          var(--accent) var(--volume-fill),
-          #555555 var(--volume-fill),
-          #555555 100%
-        );
-
-      border: 1px solid #777777;
-      border-radius: 999px;
-
-      cursor: pointer;
-    }
-
-    .volume-slider::-webkit-slider-thumb {
-      width: 17px;
-      height: 17px;
-
-      appearance: none;
-
-      background: #ffffff;
-      border: 3px solid var(--accent);
-      border-radius: 50%;
-    }
-
-    .volume-slider::-moz-range-thumb {
-      width: 13px;
-      height: 13px;
-
-      background: #ffffff;
-      border: 3px solid var(--accent);
-      border-radius: 50%;
-    }
-
-    .volume-slider:focus-visible {
-      outline: 3px solid var(--accent);
-      outline-offset: 4px;
-    }
-
-    /* ==============================
-       ANIMATIONS
-       ============================== */
-
-    @keyframes live-pulse {
-      0%,
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-
-      50% {
-        opacity: 0.35;
-        transform: scale(0.7);
-      }
-    }
-
-    @keyframes equalizer-bounce {
-      from {
-        height: 5px;
-      }
-
-      to {
-        height: 28px;
-      }
-    }
-
-    /* ==============================
-       MOBILE
-       ============================== */
-
-    @media (max-width: 700px) {
-      body {
-        padding-bottom: 140px;
-      }
-
-      .audio-player {
-        grid-template-columns: auto minmax(0, 1fr);
-        gap: 14px;
-      }
-
-      .player-tools {
-        grid-column: 1 / -1;
-
-        justify-content: flex-end;
-      }
-
-      .track-subtitle {
-        white-space: normal;
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The official fictional home of The Misogyny Podcast, hosted by Derek Vale.">
+  <meta name="theme-color" content="#8800ff">
+  <title>The Misogyny Podcast — Derek Vale</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <main class="demo-content">
-    <h1>Example Web Page</h1>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <p>
-      This represents the main website. The live broadcast player remains
-      fixed along the bottom of the screen.
-    </p>
+  <div class="fiction-notice" role="note">
+    <strong>Satirical fiction.</strong> Derek Vale is a fictional character. His views are intentionally hateful and do not represent the author.
+  </div>
 
-    <p>
-      Press the play button to simulate tuning into the live broadcast.
-    </p>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="The Misogyny Podcast home">
+      <span class="brand-mark" aria-hidden="true">
+        <span class="mic-capsule"></span>
+        <span class="mic-stem"></span>
+      </span>
+      <span class="brand-copy">
+        <span class="brand-the">The</span>
+        <span class="brand-name">Misogyny Podcast</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#episodes">Episodes</a>
+      <a href="#host">The Host</a>
+      <a href="#warning">Warning</a>
+      <a class="nav-call" href="https://github.com/monapdx/The-Misogyny-Podcast/issues/new/choose">Call In</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Independent broadcasting for men who are tired of being lectured</p>
+        <h1>THE CONVERSATION<br><span>NOBODY ASKED FOR.</span></h1>
+        <p class="hero-intro">Sex. Power. Family. The natural order. Derek Vale says what millions of men have supposedly been thinking quietly for years.</p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#episodes">Read the episodes <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="https://github.com/monapdx/The-Misogyny-Podcast/issues/new/choose">Leave a voicemail <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="live-strip" aria-label="Now broadcasting">
+          <span class="live-badge"><span class="live-dot"></span> On air</span>
+          <span class="now-playing">Derek is currently misunderstanding basic biology</span>
+          <span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Featured episode">
+        <div class="hero-card-topline">
+          <span>Featured broadcast</span>
+          <span>EP. 08</span>
+        </div>
+        <div class="hero-card-art" aria-hidden="true">
+          <span class="signal signal-one"></span>
+          <span class="signal signal-two"></span>
+          <span class="signal signal-three"></span>
+          <span class="giant-mic"><span></span></span>
+        </div>
+        <h2>Everything You Think You Know About Sex Is Wrong</h2>
+        <p>Derek removes nuance from anatomy, marriage, consent, and several centuries of human thought.</p>
+        <a href="./episodes/episode-8.md">Read Episode 8 <span aria-hidden="true">→</span></a>
+      </aside>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>FACTS DON'T CARE ABOUT YOUR FEELINGS</span><b>✦</b>
+        <span>DISCOMFORT IS NOT HARM</span><b>✦</b>
+        <span>APPARENTLY A PODCAST</span><b>✦</b>
+        <span>FACTS DON'T CARE ABOUT YOUR FEELINGS</span><b>✦</b>
+        <span>DISCOMFORT IS NOT HARM</span><b>✦</b>
+        <span>APPARENTLY A PODCAST</span><b>✦</b>
+      </div>
+    </div>
+
+    <section class="section episodes-section" id="episodes">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">The complete archive</p>
+          <h2>EPISODES</h2>
+        </div>
+        <p>Eight broadcasts. No corrections.<br>Several claims under review.</p>
+      </div>
+
+      <div class="episode-grid">
+        <a class="episode-card" href="./episodes/episode-1.md">
+          <span class="episode-number">01</span>
+          <span class="episode-type">Broadcast</span>
+          <h3>Men and Women Are Not the Same</h3>
+          <span class="episode-link">Read transcript →</span>
+        </a>
+
+        <a class="episode-card accent-cyan" href="./episodes/episode-2.md">
+          <span class="episode-number">02</span>
+          <span class="episode-type">Broadcast</span>
+          <h3>Sanctity of Marriage &amp; Motherhood</h3>
+          <span class="episode-link">Read transcript →</span>
+        </a>
+
+        <a class="episode-card accent-lime" href="./episodes/episode-3.md">
+          <span class="episode-number">03</span>
+          <span class="episode-type">Interview</span>
+          <h3>Gary’s Dilemma</h3>
+          <span class="episode-link">Read transcript →</span>
+        </a>
+
+        <a class="episode-card" href="./episodes/episode-4.md">
+          <span class="episode-number">04</span>
+          <span class="episode-type">Broadcast</span>
+          <h3>Homosexuality Is a Mental Illness</h3>
+          <span class="episode-link">Read transcript →</span>
+        </a>
+
+        <a class="episode-card accent-lime" href="./episodes/episode-5.md">
+          <span class="episode-number">05</span>
+          <span class="episode-type">Broadcast</span>
+          <h3>Rape Is a Liberal Lie</h3>
+          <span class="episode-link">Read transcript →</span>
+        </a>
+
+        <a class="episode-card accent-cyan" href="./episodes/episode-6.md">
+          <span class="episode-number">06</span>
+          <span class="episode-type">Broadcast</span>
+          <h3>A Case Against the Clitoris</h3>
+          <span class="episode-link">Read transcript →</span>
+        </a>
+
+        <a class="episode-card" href="./episodes/episode-7.md">
+          <span class="episode-number">07</span>
+          <span class="episode-type">Interview</span>
+          <h3>A Real-Life Story of Feminine Restoration</h3>
+          <span class="episode-link">Read transcript →</span>
+        </a>
+
+        <a class="episode-card accent-cyan" href="./episodes/episode-8.md">
+          <span class="episode-number">08</span>
+          <span class="episode-type">Broadcast</span>
+          <h3>Everything You Think You Know About Sex Is Wrong</h3>
+          <span class="episode-link">Read transcript →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="host-section" id="host">
+      <div class="host-label">
+        <span>Meet your host</span>
+        <strong>DEREK<br>VALE</strong>
+      </div>
+
+      <div class="host-message">
+        <p class="section-kicker">A message from the host</p>
+        <blockquote>“I’m just a man willing to examine sex, power, family, and the natural order without apologizing every time reality hurts someone’s feelings.”</blockquote>
+        <p>My name is <strong>Derek Vale</strong>, and I created <em>The Misogyny Podcast</em> because somebody had to say out loud what millions of men have been thinking quietly for years. I’m not a politician, an academic, or one of the credentialed cowards paid to make simple truths sound complicated.</p>
+        <p>This show is for men who are tired of being lectured, women courageous enough to listen, and anyone willing to question the increasingly fragile mythology of equality.</p>
+        <a class="text-link" href="./FAQ.md">Read the frequently avoided questions →</a>
+      </div>
+    </section>
+
+    <section class="warning-section" id="warning">
+      <div class="warning-heading">
+        <span class="warning-icon" aria-hidden="true">!</span>
+        <div>
+          <p>Advance notice for the fragile</p>
+          <h2>CONTENT WARNING</h2>
+        </div>
+      </div>
+      <p>Apparently, some listeners require advance notice before encountering ideas that make them uncomfortable, so here it is: this program contains <strong>explicit misogyny, sexual language, dehumanization, reproductive coercion, forced pregnancy, sexual violence, homophobia, references to childbirth and death</strong>, and opinions about women delivered without the usual apologies, euphemisms, or permission slips.</p>
+      <p>If any of that sounds “harmful” or “triggering” to you, exercise whatever remains of your personal agency and stop listening—though I suspect your outrage will keep you here.</p>
+    </section>
+
+    <section class="callin-section" id="call-in">
+      <div class="callin-intro">
+        <p class="section-kicker">The lines are open</p>
+        <h2>CALL DEREK.<br>YOU KNOW YOU WANT TO.</h2>
+        <p>Send praise, challenge a claim, leave an angry voicemail, ask for questionable advice, or pitch yourself as a future guest.</p>
+      </div>
+
+      <div class="callin-grid">
+        <a href="https://github.com/monapdx/The-Misogyny-Podcast/issues/new?template=angry-voicemail.yml">
+          <span>01</span><strong>Leave Hate Mail</strong><i>↗</i>
+        </a>
+        <a href="https://github.com/monapdx/The-Misogyny-Podcast/issues/new?template=challenge-a-claim.yml">
+          <span>02</span><strong>Challenge a Claim</strong><i>↗</i>
+        </a>
+        <a href="https://github.com/monapdx/The-Misogyny-Podcast/issues/new?template=supporter-message.yml">
+          <span>03</span><strong>Praise Derek</strong><i>↗</i>
+        </a>
+        <a href="https://github.com/monapdx/The-Misogyny-Podcast/issues/new?template=ask-derek.yml">
+          <span>04</span><strong>Ask Derek Anything</strong><i>↗</i>
+        </a>
+        <a href="https://github.com/monapdx/The-Misogyny-Podcast/issues/new?template=pitch-yourself.yml">
+          <span>05</span><strong>Pitch a Guest</strong><i>↗</i>
+        </a>
+      </div>
+    </section>
   </main>
 
-  <section
-    class="audio-player"
-    id="audioPlayer"
-    aria-label="Live broadcast player"
-  >
-    <button
-      class="play-button"
-      id="playButton"
-      type="button"
-      aria-label="Play live broadcast"
-      aria-pressed="false"
-    >
-      <span class="play-icon" id="playIcon" aria-hidden="true">▶</span>
-    </button>
-
-    <div class="track-details">
-      <div class="live-label">
-        <span class="live-dot" aria-hidden="true"></span>
-        <span id="statusText">Broadcast paused</span>
-      </div>
-
-      <h2 class="track-title">
-        The Misogyny Podcast
-      </h2>
-
-      <p class="track-subtitle">
-        <strong>EPISODE 8 |</strong>
-        <em>Everything You Think You Know About Sex Is Wrong</em>
-      </p>
+  <footer class="site-footer">
+    <div class="footer-brand">THE MISOGYNY PODCAST</div>
+    <p><strong>Disclaimer:</strong> This is a work of satirical fiction and dark humor. Derek Vale and all callers, guests, organizations, and events are fictional unless explicitly stated otherwise. The project condemns the beliefs expressed by its fictional host.</p>
+    <div class="footer-links">
+      <a href="https://github.com/monapdx/The-Misogyny-Podcast">GitHub Repository</a>
+      <a href="./FAQ.md">FAQ</a>
+      <a href="#top">Back to top ↑</a>
     </div>
-
-    <div class="player-tools">
-      <div class="equalizer" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <label class="volume-control">
-        <span
-          class="volume-icon"
-          id="volumeIcon"
-          aria-hidden="true"
-        >
-          🔊
-        </span>
-
-        <input
-          class="volume-slider"
-          id="volumeSlider"
-          type="range"
-          min="0"
-          max="100"
-          value="75"
-          aria-label="Volume"
-        />
-      </label>
-    </div>
-  </section>
-
-  <script>
-    const audioPlayer = document.getElementById("audioPlayer");
-    const playButton = document.getElementById("playButton");
-    const playIcon = document.getElementById("playIcon");
-    const statusText = document.getElementById("statusText");
-
-    const volumeSlider = document.getElementById("volumeSlider");
-    const volumeIcon = document.getElementById("volumeIcon");
-
-    let isPlaying = false;
-
-    function updatePlayerState() {
-      audioPlayer.classList.toggle("is-playing", isPlaying);
-
-      playIcon.textContent = isPlaying ? "❚❚" : "▶";
-      statusText.textContent = isPlaying
-        ? "Listening live"
-        : "Broadcast paused";
-
-      playButton.setAttribute(
-        "aria-label",
-        isPlaying
-          ? "Pause live broadcast"
-          : "Play live broadcast"
-      );
-
-      playButton.setAttribute(
-        "aria-pressed",
-        String(isPlaying)
-      );
-    }
-
-    function togglePlayback() {
-      isPlaying = !isPlaying;
-      updatePlayerState();
-    }
-
-    function updateVolume() {
-      const volume = Number(volumeSlider.value);
-
-      volumeSlider.style.setProperty(
-        "--volume-fill",
-        `${volume}%`
-      );
-
-      if (volume === 0) {
-        volumeIcon.textContent = "🔇";
-      } else if (volume < 50) {
-        volumeIcon.textContent = "🔉";
-      } else {
-        volumeIcon.textContent = "🔊";
-      }
-    }
-
-    playButton.addEventListener("click", togglePlayback);
-    volumeSlider.addEventListener("input", updateVolume);
-
-    updatePlayerState();
-    updateVolume();
-  </script>
+    <small>© 2026 The Misogyny Podcast. Unfortunately fictional.</small>
+  </footer>
 </body>
 </html>
