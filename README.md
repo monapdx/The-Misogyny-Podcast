@@ -32,6 +32,7 @@ I do ask that you please see the **[FAQ](FAQ.md)** before leaving a nasty voice 
 | 5 | [RAPE IS A LIBERAL LIE](./episodes/episode-5.md) |
 | 6 | [A CASE AGAINST THE CLITORIS](./episodes/episode-6.md) |
 | 7 | [A REAL-LIFE STORY OF FEMININE RESTORATION](./episodes/episode-7.md) |
+| 8 | [EVERYTHING YOU THINK YOU KNOW ABOUT SEX IS WRONG](./episodes/episode-8.md) |
 
 <!-- EPISODES_TABLE_END -->
 
