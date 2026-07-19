@@ -12,6 +12,8 @@ This show is for men who are tired of being lectured, women courageous enough to
 
 I welcome [praise](), [criticism](https://github.com/monapdx/The-Misogyny-Podcast/issues/new?template=angry-voicemail.yml), [questions](), and [guest requests]() through the [call-in forms](https://github.com/monapdx/The-Misogyny-Podcast/issues/new/choose) — although submitting a response does not guarantee that I will treat it with the seriousness you believe it deserves.</p>
 
+I do ask that you please see the **[FAQ](FAQ.md)** before leaving a nasty voice mail or challenging me on something I've said that upset you. 
+
 ---
 ## Content Warning
 
