@@ -64,7 +64,7 @@ This is why men are praised for sexual experience while women are judged for it.
 
 Liberals respond by saying this is unfair.
 
-Of course it is unfair. Biology is full of unfair arrangements. Men are expected to protect women despite women being physically weaker. Men are expected to provide despite women consuming the resources. Men are expected to accept legal and financial responsibility for children women physically control during pregnancy.
+Of course it is unfair. Biology is full of unfair arrangements. Men are expected to protect women because they are physically stronger. Men are expected to provide despite women consuming the resources. Men are expected to accept legal and financial responsibility for children women physically control during pregnancy.
 
 Women do not object to unfairness when it benefits them. They object when unfairness comes with standards.
 
