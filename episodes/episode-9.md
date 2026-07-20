@@ -1,3 +1,10 @@
+---
+title: "WOMEN IN THE MILITARY"
+category: broadcast
+tags: [military, government, reproduction, combat, gender]
+---
+
+
 I received **[a question](https://github.com/monapdx/The-Misogyny-Podcast/issues/5)** from a listener after our last episode aired. 
 
 Identifying themselves only as *"Asking for a Friend,"* they wrote the following:
