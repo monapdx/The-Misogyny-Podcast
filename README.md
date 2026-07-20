@@ -33,6 +33,7 @@ I do ask that you please see the **[FAQ](FAQ.md)** before leaving a nasty voice 
 | 6 | [A CASE AGAINST THE CLITORIS](./episodes/episode-6.md) |
 | 7 | [A REAL-LIFE STORY OF FEMININE RESTORATION](./episodes/episode-7.md) |
 | 8 | [EVERYTHING YOU THINK YOU KNOW ABOUT SEX IS WRONG](./episodes/episode-8.md) |
+| 9 | [WOMEN IN THE MILITARY](./episodes/episode-9.md) |
 
 <!-- EPISODES_TABLE_END -->
 
