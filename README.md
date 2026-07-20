@@ -34,6 +34,7 @@ I do ask that you please see the **[FAQ](FAQ.md)** before leaving a nasty voice 
 | 7 | [A REAL-LIFE STORY OF FEMININE RESTORATION](./episodes/episode-7.md) |
 | 8 | [EVERYTHING YOU THINK YOU KNOW ABOUT SEX IS WRONG](./episodes/episode-8.md) |
 | 9 | [WOMEN IN THE MILITARY](./episodes/episode-9.md) |
+| 10 | [WHY OUR COUNTRY NEEDS A MANDATORY SURROGACY DRAFT](./episodes/episode-10.md) |
 
 <!-- EPISODES_TABLE_END -->
 
