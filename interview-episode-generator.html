@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interview Episode Generator</title>
+  <style>
+    :root {
+      --black: #202024;
+      --white: #fff;
+      --lime: #39ff14;
+      --pink: #ff2bd6;
+      --aqua: #00e5ff;
+      --yellow: #fffb00;
+      --purple: #9d00ff;
+      --line: 4px;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 28px clamp(18px, 5vw, 70px) 60px;
+      color: var(--black);
+      background: #f3f3f5;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      width: min(100%, 1640px);
+      margin: 0 auto 32px;
+      padding: 25px 27px;
+      background: var(--white);
+      border: var(--line) solid var(--black);
+      border-radius: 28px;
+      box-shadow: 10px 10px 0 var(--black);
+    }
+
+    h1, h2, p { margin-top: 0; }
+    h1 { margin-bottom: 5px; font-size: clamp(1.7rem, 3vw, 2.5rem); line-height: 1; }
+    header p { margin-bottom: 0; max-width: 760px; color: #4f4f59; font-size: .93rem; }
+
+    .brand-icon {
+      display: grid;
+      flex: 0 0 60px;
+      width: 60px;
+      height: 60px;
+      place-items: center;
+      color: var(--white);
+      background: var(--pink);
+      border: 4px solid var(--black);
+      border-radius: 18px;
+      font-size: 1.8rem;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(330px, .86fr) minmax(0, 1.14fr);
+      gap: 32px;
+      width: min(100%, 1640px);
+      margin: 0 auto;
+    }
+
+    .controls {
+      padding: 30px;
+      background: var(--white);
+      border: var(--line) solid var(--black);
+      border-radius: 26px;
+      box-shadow: 10px 10px 0 var(--black);
+    }
+
+    .preview-panel {
+      min-width: 0;
+      padding: 30px;
+      background: var(--white);
+      border: var(--line) solid var(--black);
+      border-radius: 26px;
+      box-shadow: 10px 10px 0 var(--black);
+    }
+
+    .panel-title {
+      margin-bottom: 7px;
+      font-size: 1.55rem;
+    }
+
+    .section-description { margin: 0 0 25px; color: #595964; font-size: .92rem; }
+
+    label {
+      display: block;
+      margin: 0 0 7px;
+      font-size: .82rem;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    input {
+      width: 100%;
+      margin: 0 0 19px;
+      padding: 14px 16px;
+      color: var(--black);
+      background: #f7f7f8;
+      border: 4px solid var(--black);
+      border-radius: 16px;
+      font: inherit;
+      font-weight: 750;
+    }
+
+    input:focus { outline: 4px solid var(--pink); outline-offset: 2px; }
+
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 9px; }
+
+    button {
+      padding: 11px 15px;
+      border: 3px solid var(--black);
+      border-radius: 14px;
+      font: inherit;
+      font-weight: 950;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform .1s, background .15s;
+    }
+
+    button:hover { transform: translateY(-2px); }
+    button:active { transform: translateY(1px); }
+    .generate { color: var(--white); background: var(--black); }
+    .download { background: var(--pink); }
+    .copy { background: var(--white); }
+
+    .help {
+      margin-top: 24px;
+      padding: 13px;
+      color: #494951;
+      background: #f7f7f8;
+      border: 2px solid #d2d2d7;
+      border-radius: 15px;
+      font-size: .92rem;
+      line-height: 1.45;
+    }
+
+    #status { min-height: 1.4em; margin: 16px 0 0; font-weight: 900; }
+
+    #preview {
+      width: min(100%, 960px);
+      min-height: 300px;
+      margin: 0 auto;
+      padding: clamp(18px, 4vw, 42px);
+      color: #111;
+      background: #f8f8f9;
+      border: 2px solid #d2d2d7;
+      border-radius: 18px;
+      font-family: Georgia, Cambria, serif;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #373d49;
+    }
+
+    .empty { color: #666; text-align: center; font-weight: 800; }
+
+    .episode-heading {
+      margin: 0 0 1.5em;
+    }
+
+    .episode-heading h2 {
+      margin: 0;
+      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 2em;
+      font-weight: 600;
+    }
+
+    #preview .chat { display: flex; flex-direction: column; gap: 1.35rem; margin: 2rem 0; }
+    #preview .message { display: flex; max-width: 78%; }
+    #preview .message.host { justify-content: flex-end; margin-left: auto; }
+    #preview .message.guest { justify-content: flex-start; }
+    #preview .bubble {
+      width: 100%;
+      padding: 1rem 1.25rem;
+      border-radius: 18px;
+      border: 3px solid #202024;
+      line-height: 1.7;
+      box-shadow: 6px 6px 0 #202024;
+    }
+    #preview .host .bubble { background: #e8f4ff; border-bottom-right-radius: 5px; }
+    #preview .guest .bubble { background: #f3eeff; border-bottom-left-radius: 5px; }
+    #preview .message p { margin: 0; }
+    #preview .message + .message { margin-top: .35rem; }
+
+    @media (max-width: 850px) {
+      body { padding: 18px 15px 45px; }
+      header { align-items: flex-start; border-radius: 22px; box-shadow: 7px 7px 0 var(--black); }
+      main { grid-template-columns: 1fr; }
+      .controls, .preview-panel { border-radius: 22px; box-shadow: 7px 7px 0 var(--black); }
+      #preview .message { max-width: 92%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand-icon" aria-hidden="true">🎙</div>
+    <div>
+      <h1>Interview Episode Generator</h1>
+      <p>Create a standalone interview transcript with alternating host and guest bubbles, then edit the generated document directly.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls" aria-labelledby="controls-title">
+      <h2 class="panel-title" id="controls-title">Episode Setup</h2>
+      <p class="section-description">Name the speakers and choose how many question-and-answer exchanges to generate.</p>
+
+      <label for="episodeTitle">Episode title</label>
+      <input id="episodeTitle" value="">
+
+      <label for="hostName">Host name</label>
+      <input id="hostName" value="">
+
+      <label for="guestName">Guest name</label>
+      <input id="guestName" value="">
+
+      <label for="questionCount">Number of questions</label>
+      <input id="questionCount" type="number" min="1" max="100" value="10">
+
+      <div class="buttons">
+        <button class="generate" id="generateButton" type="button">Generate Preview</button>
+        <button class="download" id="downloadButton" type="button">Download HTML</button>
+        <button class="copy" id="copyButton" type="button">Copy HTML</button>
+      </div>
+
+      <p id="status" role="status" aria-live="polite"></p>
+
+      <div class="help">
+        <strong>How it works:</strong> each question creates two bubbles: one host question and one guest response. The downloaded file is completely standalone. Open it in Notepad++ and replace the bracketed placeholders with the interview dialogue.
+      </div>
+    </section>
+
+    <section class="preview-panel" aria-labelledby="preview-title">
+      <h2 class="panel-title" id="preview-title">Preview</h2>
+      <p class="section-description">The downloaded file keeps this transcript layout and includes all of its CSS.</p>
+      <div id="preview"><p class="empty">Press Generate Preview to build the interview.</p></div>
+    </section>
+  </main>
+
+  <script>
+    const fields = {
+      title: document.querySelector('#episodeTitle'),
+      host: document.querySelector('#hostName'),
+      guest: document.querySelector('#guestName'),
+      count: document.querySelector('#questionCount')
+    };
+
+    const preview = document.querySelector('#preview');
+    const status = document.querySelector('#status');
+    let generatedHtml = '';
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;');
+    }
+
+    function getData() {
+      const title = fields.title.value.trim() || 'Untitled Interview';
+      const host = fields.host.value.trim() || 'Host';
+      const guest = fields.guest.value.trim() || 'Guest';
+      const count = Math.max(1, Math.min(100, Number.parseInt(fields.count.value, 10) || 1));
+      fields.count.value = count;
+      return { title, host, guest, count };
+    }
+
+    function makeTranscript(data) {
+      return Array.from({ length: data.count }, (_, index) => {
+        const number = index + 1;
+        return `
+  <div class="message host">
+    <div class="bubble"><p><strong>${escapeHtml(data.host)}:</strong> [Question ${number}]</p></div>
+  </div>
+  <div class="message guest">
+    <div class="bubble"><p><strong>${escapeHtml(data.guest)}:</strong> [Response ${number}]</p></div>
+  </div>`;
+      }).join('\n');
+    }
+
+    function makeDocument(data) {
+      const transcript = makeTranscript(data);
+      return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${escapeHtml(data.title)}</title>
+  <style>
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-alpha2/katex.min.css");
+
+    body {
+      font-family: Georgia, Cambria, serif;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #373D49;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.25em; }
+    a { color: #35D7BB; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      font-family: "Ubuntu Mono", Monaco, monospace;
+      background: #F5F7FA;
+      padding: 0.2em 0.4em;
+      border-radius: 3px;
+    }
+    pre { background: #F5F7FA; padding: 1em; border-radius: 3px; overflow-x: auto; }
+    pre code { background: none; padding: 0; }
+    blockquote {
+      border-left: 3px solid #A0AABF;
+      padding-left: 1em;
+      margin-left: 0;
+      font-style: italic;
+      color: #666;
+    }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #E8E8E8; padding: 0.5em; text-align: left; }
+    th { background: #F5F7FA; font-weight: 600; }
+    img { max-width: 100%; height: auto; }
+    .chat { display: flex; flex-direction: column; gap: 1.35rem; margin: 2rem 0; }
+    .message { display: flex; max-width: 78%; }
+    .message.host { justify-content: flex-end; margin-left: auto; }
+    .message.guest { justify-content: flex-start; }
+    .bubble {
+      width: 100%;
+      padding: 1rem 1.25rem;
+      border-radius: 18px;
+      border: 3px solid #202024;
+      line-height: 1.7;
+      box-shadow: 6px 6px 0 #202024;
+    }
+    .host .bubble { background: #e8f4ff; border-bottom-right-radius: 5px; }
+    .guest .bubble { background: #f3eeff; border-bottom-left-radius: 5px; }
+    .message p { margin: 0; }
+    .message + .message { margin-top: .35rem; }
+    @media (max-width: 600px) {
+      body { padding: 1rem; }
+      .message { max-width: 92%; }
+    }
+    @media print { .message { break-inside: avoid; } }
+  </style>
+</head>
+<body id="preview">
+  <h1>${escapeHtml(data.title)}</h1>
+  <div class="chat">
+${transcript}
+  </div>
+</body>
+</html>`;
+    }
+
+    function generate() {
+      const data = getData();
+      generatedHtml = makeDocument(data);
+      preview.innerHTML = `
+        <header class="episode-heading">
+          <h2>${escapeHtml(data.title)}</h2>
+        </header>
+        <div class="chat">${makeTranscript(data)}</div>`;
+      status.textContent = `Created ${data.count} questions and ${data.count} responses.`;
+      return data;
+    }
+
+    function filename(title) {
+      const safe = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 70);
+      return `${safe || 'interview-episode'}.html`;
+    }
+
+    document.querySelector('#generateButton').addEventListener('click', generate);
+
+    document.querySelector('#downloadButton').addEventListener('click', () => {
+      const data = generate();
+      const blob = new Blob([generatedHtml], { type: 'text/html;charset=utf-8' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = filename(data.title);
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(link.href);
+      status.textContent = `Downloaded ${filename(data.title)}.`;
+    });
+
+    document.querySelector('#copyButton').addEventListener('click', async () => {
+      generate();
+      try {
+        await navigator.clipboard.writeText(generatedHtml);
+        status.textContent = 'Complete HTML copied to the clipboard.';
+      } catch {
+        status.textContent = 'Clipboard access was blocked. Use Download HTML instead.';
+      }
+    });
+
+    generate();
+  </script>
+</body>
+</html>
