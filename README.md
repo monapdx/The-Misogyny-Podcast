@@ -44,13 +44,13 @@ I do ask that you please see the **[FAQ](FAQ.md)** before leaving a nasty voice 
 
 | Type | Submission and Email Thread |
 |---|---|
-| Guest Pitch | [DR. ALTERS — WEIRD SCIENCE SURGICAL COLLECTIVE](guest-pitch-dr-alters-electrocution.html) |
-| Hate Mail | [HATE MAIL COLLECTION](hatemail-electrocution.html) |
-| Challenge | [YOUR CLAIMS ABOUT THE ROLE OF RAPE — UNIVERSITY STUDENT](challenge-university-student-electrocution.html) |
-| Question | [NEED GUIDANCE AND GOD — SWOLLENWOMB](question-need-god-and-guidance-electrocution.html) |
-| Question | [DESPERATELY SEEKING MOTHERHOOD](question-seeking-motherhood-electrocution.html) |
-| Support | [ARE YOU STILL SINGLE? — GUILTYPLEASURE](support-guilty-pleasure-electrocution.html) |
-| Support | [WOMEN ARE THE PROBLEM — DONE WITH THESE BITCHES](support-women-are-the-problem-electrocution.html) |
+| Guest Pitch | [DR. ALTERS — WEIRD SCIENCE SURGICAL COLLECTIVE](https://monapdx.github.io/The-Misogyny-Podcast/submissions/html/guest-pitch-dr-alters-electrocution.html) |
+| Hate Mail | [HATE MAIL COLLECTION](https://monapdx.github.io/The-Misogyny-Podcast/submissions/html/hatemail-electrocution.html) |
+| Challenge | [YOUR CLAIMS ABOUT THE ROLE OF RAPE — UNIVERSITY STUDENT](https://monapdx.github.io/The-Misogyny-Podcast/submissions/html/challenge-university-student-electrocution.html) |
+| Question | [NEED GUIDANCE AND GOD — SWOLLENWOMB](https://monapdx.github.io/The-Misogyny-Podcast/submissions/html/question-need-god-and-guidance-electrocution.html) |
+| Question | [DESPERATELY SEEKING MOTHERHOOD](https://monapdx.github.io/The-Misogyny-Podcast/submissions/html/question-seeking-motherhood-electrocution.html) |
+| Support | [ARE YOU STILL SINGLE? — GUILTYPLEASURE](https://monapdx.github.io/The-Misogyny-Podcast/submissions/html/support-guilty-pleasure-electrocution.html) |
+| Support | [WOMEN ARE THE PROBLEM — DONE WITH THESE BITCHES](https://monapdx.github.io/The-Misogyny-Podcast/submissions/html/support-women-are-the-problem-electrocution.html) |
 
 <!-- SUBMISSIONS_TABLE_END -->
 
