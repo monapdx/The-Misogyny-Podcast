@@ -13,7 +13,7 @@ body:
     id: caller-name
     attributes:
       label: Email
-      placeholder: "Anonymous, regrettably, is allowed"
+      placeholder: ""
     validations:
       required: true
 
