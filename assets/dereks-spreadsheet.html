@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Female Listeners in Love With Derek</title>
+  <style>
+    :root {
+      --grid: #c8ccd1;
+      --grid-dark: #9ca3aa;
+      --sheet-head: #f1f3f4;
+      --green: #188038;
+      --green-light: #e6f4ea;
+      --text: #202124;
+      --muted: #5f6368;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px;
+      background: #e9edf1;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .window {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      border: 1px solid #b7bbc0;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, .16);
+    }
+
+    .titlebar {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px;
+      border-bottom: 1px solid #dadce0;
+      background: #fff;
+    }
+
+    .sheet-icon {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 40px;
+      border-radius: 3px;
+      background: #0f9d58;
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 900;
+    }
+
+    .titlebar h1 {
+      margin: 0;
+      font-size: 1.12rem;
+      font-weight: 500;
+    }
+
+    .titlebar p {
+      margin: 3px 0 0;
+      color: var(--muted);
+      font-size: .78rem;
+    }
+
+    .menus {
+      display: flex;
+      gap: 22px;
+      padding: 8px 18px;
+      border-bottom: 1px solid #dadce0;
+      color: #3c4043;
+      font-size: .82rem;
+    }
+
+    .formula-bar {
+      display: grid;
+      grid-template-columns: 70px 34px 1fr;
+      min-height: 36px;
+      border-bottom: 1px solid var(--grid);
+      color: var(--muted);
+      font-size: .82rem;
+    }
+
+    .formula-bar span {
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      border-right: 1px solid var(--grid);
+    }
+
+    .fx {
+      justify-content: center;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    .sheet-scroll { overflow-x: auto; }
+
+    table {
+      width: 100%;
+      min-width: 980px;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 13px;
+    }
+
+    col.row-num { width: 48px; }
+    col.name { width: 230px; }
+    col.date { width: 155px; }
+    col.proposal { width: 190px; }
+    col.kids { width: 205px; }
+    col.score { width: 210px; }
+
+    th, td {
+      height: 34px;
+      padding: 6px 9px;
+      border-right: 1px solid var(--grid);
+      border-bottom: 1px solid var(--grid);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .corner,
+    .letters th,
+    .row-number {
+      background: var(--sheet-head);
+      color: var(--muted);
+      font-weight: 400;
+      text-align: center;
+      user-select: none;
+    }
+
+    .corner { border-right-color: var(--grid-dark); }
+
+    .headers th:not(.row-number) {
+      height: 52px;
+      background: var(--green-light);
+      color: #103c1e;
+      font-weight: 700;
+      text-align: left;
+      white-space: normal;
+      line-height: 1.15;
+      box-shadow: inset 0 -2px 0 var(--green);
+    }
+
+    tbody tr:nth-child(even) td:not(.row-number) { background: #fbfbfb; }
+
+    tbody td:not(.row-number) {
+      cursor: text;
+      outline: none;
+    }
+
+    tbody td:not(.row-number):focus {
+      position: relative;
+      background: #fff;
+      box-shadow: inset 0 0 0 2px var(--green);
+    }
+
+    .center { text-align: center; }
+
+    .score-cell {
+      color: #a50e0e;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .rejected td:not(.row-number) {
+      color: #777;
+      background: #f4f4f4 !important;
+      text-decoration: line-through;
+      text-decoration-color: #b3261e;
+      text-decoration-thickness: 2px;
+    }
+
+    .tabs {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 42px;
+      padding: 0 16px;
+      border-top: 1px solid #dadce0;
+      background: #fff;
+      font-size: .78rem;
+    }
+
+    .plus { color: var(--muted); font-size: 1.2rem; }
+
+    .tab {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      border-bottom: 3px solid var(--green);
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    .hint {
+      margin: 12px auto 0;
+      width: min(1180px, 100%);
+      color: #555;
+      font-size: .78rem;
+      text-align: right;
+    }
+
+    @media (max-width: 700px) {
+      body { padding: 12px; }
+      .menus { gap: 13px; overflow: hidden; }
+    }
+  </style>
+</head>
+<body>
+  <main class="window">
+    <header class="titlebar">
+      <div class="sheet-icon" aria-hidden="true">▦</div>
+      <div>
+        <h1>Female Listeners in Love With Derek</h1>
+        <p>Private working document · definitely a normal thing to maintain</p>
+      </div>
+    </header>
+
+    <nav class="menus" aria-label="Spreadsheet menus">
+      <span>File</span><span>Edit</span><span>View</span><span>Insert</span><span>Format</span><span>Data</span><span>Tools</span>
+    </nav>
+
+    <div class="formula-bar" aria-hidden="true">
+      <span>A2</span><span class="fx">fx</span><span></span>
+    </div>
+
+    <div class="sheet-scroll">
+      <table aria-label="Derek's marriage prospect and humiliation index spreadsheet">
+        <colgroup>
+          <col class="row-num">
+          <col class="name">
+          <col class="date">
+          <col class="proposal">
+          <col class="kids">
+          <col class="score">
+        </colgroup>
+        <thead>
+          <tr class="letters">
+            <th class="corner"></th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+          </tr>
+          <tr class="headers">
+            <th class="row-number">1</th>
+            <th>Name of Woman</th>
+            <th>Date of Contact</th>
+            <th>Marriage Proposal</th>
+            <th>Number of Kids Requested</th>
+            <th>Humiliation Index Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="rejected"><td class="row-number">2</td><td contenteditable="true">Janessa</td><td contenteditable="true">July 2026</td><td contenteditable="true">Not yet (email interpreted as one)</td><td class="center" contenteditable="true">0</td><td class="score-cell" contenteditable="true">8.7 / 10</td></tr>
+          <tr><td class="row-number">3</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td class="center" contenteditable="true"></td><td class="score-cell" contenteditable="true"></td></tr>
+          <tr><td class="row-number">4</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td class="center" contenteditable="true"></td><td class="score-cell" contenteditable="true"></td></tr>
+          <tr><td class="row-number">5</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td class="center" contenteditable="true"></td><td class="score-cell" contenteditable="true"></td></tr>
+          <tr><td class="row-number">6</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td class="center" contenteditable="true"></td><td class="score-cell" contenteditable="true"></td></tr>
+          <tr><td class="row-number">7</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td class="center" contenteditable="true"></td><td class="score-cell" contenteditable="true"></td></tr>
+          <tr><td class="row-number">8</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td class="center" contenteditable="true"></td><td class="score-cell" contenteditable="true"></td></tr>
+          <tr><td class="row-number">9</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td class="center" contenteditable="true"></td><td class="score-cell" contenteditable="true"></td></tr>
+          <tr><td class="row-number">10</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td class="center" contenteditable="true"></td><td class="score-cell" contenteditable="true"></td></tr>
+          <tr><td class="row-number">11</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td class="center" contenteditable="true"></td><td class="score-cell" contenteditable="true"></td></tr>
+          <tr><td class="row-number">12</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td class="center" contenteditable="true"></td><td class="score-cell" contenteditable="true"></td></tr>
+          <tr><td class="row-number">13</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td class="center" contenteditable="true"></td><td class="score-cell" contenteditable="true"></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="tabs"><span class="plus">＋</span><span class="tab">Female Listeners</span></footer>
+  </main>
+  <p class="hint">Cells are editable in the browser, but changes disappear when the page is refreshed.</p>
+</body>
+</html>

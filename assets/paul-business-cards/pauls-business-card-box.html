@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paul's Business Card Box</title>
+  <style>
+    :root {
+      --ink: #090909;
+      --paper: #f6f4ef;
+      --card: #e8e8e8;
+      --green: #00ef9a;
+      --pink: #ff2bd6;
+      --purple: #7a00ff;
+      --yellow: #fffb00;
+      --box: #b88958;
+      --box-dark: #835a32;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 18px 60px;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(0,0,0,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,.035) 1px, transparent 1px),
+        var(--paper);
+      background-size: 22px 22px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      width: min(960px, 100%);
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 4.6rem);
+      line-height: .92;
+      text-transform: uppercase;
+      letter-spacing: -.06em;
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: 14px 0 28px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .box-wrap {
+      position: relative;
+      padding: 30px 34px 38px;
+      border: 4px solid var(--ink);
+      background: var(--box);
+      box-shadow: 10px 10px 0 var(--ink);
+    }
+
+    .box-wrap::before {
+      content: "PAUL'S CARDS — DO NOT THROW AWAY";
+      position: absolute;
+      top: 9px;
+      left: 22px;
+      color: #3c2716;
+      font-family: "Comic Sans MS", cursive;
+      font-size: .72rem;
+      font-weight: 700;
+      transform: rotate(-1deg);
+    }
+
+    .box {
+      position: relative;
+      height: 330px;
+      overflow: hidden;
+      border: 4px solid var(--ink);
+      border-top-width: 10px;
+      background:
+        linear-gradient(90deg, transparent 49.5%, rgba(0,0,0,.08) 50%, transparent 50.5%),
+        #754c28;
+      box-shadow: inset 0 12px 20px rgba(0,0,0,.4);
+    }
+
+    .card-tab {
+      position: absolute;
+      width: 300px;
+      aspect-ratio: 1.75 / 1;
+      padding: 0;
+      border: 3px solid var(--ink);
+      background: linear-gradient(#f8f8f8, #cecece);
+      box-shadow: 5px 7px 0 rgba(0,0,0,.35);
+      cursor: pointer;
+      transition: transform .16s ease, filter .16s ease;
+    }
+
+    .card-tab:hover,
+    .card-tab:focus-visible {
+      z-index: 20 !important;
+      filter: brightness(1.04);
+      outline: 4px solid var(--yellow);
+      outline-offset: 2px;
+    }
+
+    .card-tab[aria-pressed="true"] {
+      z-index: 25 !important;
+      outline: 5px solid var(--pink);
+      outline-offset: 2px;
+    }
+
+    .card-tab:nth-child(1) { left: 4%; top: 52px; transform: rotate(-6deg); z-index: 2; }
+    .card-tab:nth-child(2) { left: 19%; top: 91px; transform: rotate(3deg); z-index: 4; }
+    .card-tab:nth-child(3) { left: 35%; top: 43px; transform: rotate(-1deg); z-index: 3; }
+    .card-tab:nth-child(4) { left: 50%; top: 106px; transform: rotate(5deg); z-index: 6; }
+    .card-tab:nth-child(5) { left: 65%; top: 57px; transform: rotate(-4deg); z-index: 5; }
+    .card-tab:nth-child(6) { left: 28%; top: 174px; transform: rotate(2deg); z-index: 8; }
+
+    .business-card {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      overflow: hidden;
+      text-align: center;
+      background: linear-gradient(160deg, #fafafa 0%, #dedede 55%, #c8c8c8 100%);
+    }
+
+    .name {
+      color: #000;
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: 1.48rem;
+      letter-spacing: .015em;
+      line-height: 1;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 0 var(--green);
+      white-space: nowrap;
+    }
+
+    .title {
+      margin-top: 7px;
+      color: #555;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    .show {
+      margin-top: 2px;
+      font-size: 1.08rem;
+      font-style: italic;
+    }
+
+    .extra {
+      margin-top: 5px;
+      font-size: .72rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .email {
+      margin-top: 11px;
+      color: #555;
+      font-size: .67rem;
+    }
+
+    .misspelled {
+      text-decoration: underline wavy var(--pink) 2px;
+      text-underline-offset: 3px;
+    }
+
+    .inspection {
+      display: grid;
+      grid-template-columns: minmax(300px, 1.2fr) 1fr;
+      gap: 26px;
+      align-items: center;
+      margin-top: 34px;
+      padding: 26px;
+      border: 4px solid var(--ink);
+      background: #fff;
+      box-shadow: 10px 10px 0 var(--purple);
+    }
+
+    .selected-card {
+      width: 100%;
+      aspect-ratio: 1.75 / 1;
+      border: 4px solid var(--ink);
+      box-shadow: 8px 8px 0 var(--green);
+    }
+
+    .selected-card .name { font-size: clamp(1.6rem, 4vw, 2.35rem); }
+    .selected-card .title { font-size: clamp(1rem, 2.5vw, 1.45rem); }
+    .selected-card .show { font-size: clamp(1.05rem, 2.5vw, 1.5rem); }
+    .selected-card .extra { font-size: clamp(.75rem, 2vw, 1rem); }
+    .selected-card .email { font-size: clamp(.7rem, 1.7vw, 1rem); }
+
+    .details h2 {
+      margin: 0 0 4px;
+      font-size: 1.75rem;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .version {
+      display: inline-block;
+      margin: 6px 0 14px;
+      padding: 4px 8px;
+      border: 2px solid var(--ink);
+      background: var(--yellow);
+      font-size: .75rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 7px 16px;
+      margin: 0;
+    }
+
+    dt { font-weight: 700; }
+    dd { margin: 0; font-variant-numeric: tabular-nums; }
+
+    .remaining {
+      margin-top: 16px;
+      padding: 10px 12px;
+      border: 3px solid var(--ink);
+      background: var(--pink);
+      font-size: 1.18rem;
+      font-weight: 900;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .note {
+      margin: 14px 0 0;
+      color: #333;
+      font-size: .9rem;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 760px) {
+      .box-wrap { padding: 30px 14px 24px; }
+      .box { height: 430px; }
+      .card-tab { width: 230px; }
+      .card-tab:nth-child(1) { left: 1%; top: 50px; }
+      .card-tab:nth-child(2) { left: 29%; top: 95px; }
+      .card-tab:nth-child(3) { left: 6%; top: 155px; }
+      .card-tab:nth-child(4) { left: 35%; top: 205px; }
+      .card-tab:nth-child(5) { left: 4%; top: 270px; }
+      .card-tab:nth-child(6) { left: 38%; top: 310px; }
+      .inspection { grid-template-columns: 1fr; padding: 18px; }
+    }
+
+    @media (max-width: 470px) {
+      .card-tab { width: 190px; }
+      .name { font-size: 1.02rem; }
+      .title, .show { font-size: .76rem; }
+      .email { font-size: .52rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h1>Paul's Business Card Box</h1>
+    <p class="intro">Six print runs. One box. Almost no evidence that Paul learned anything. Click a card to inspect it and see how many copies he is still trying to get rid of.</p>
+
+    <section class="box-wrap" aria-label="Messy box of business cards">
+      <div class="box" id="cardBox"></div>
+    </section>
+
+    <section class="inspection" aria-live="polite">
+      <div class="selected-card" id="selectedCard"></div>
+      <div class="details">
+        <h2 id="designName"></h2>
+        <span class="version" id="version"></span>
+        <dl>
+          <dt>Originally printed</dt><dd id="printed"></dd>
+          <dt>Given away</dt><dd id="distributed"></dd>
+          <dt>Current box inventory</dt><dd id="inventory"></dd>
+          <dt>Highest eBay sale</dt><dd id="ebay"></dd>
+        </dl>
+        <div class="remaining" id="remaining"></div>
+        <p class="note" id="note"></p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Edit the wording and absurd inventory figures here.
+    const cardDesigns = [
+      {
+        name: "The Mysterious Stranger",
+        printed: 3000,
+        remaining: 2847,
+        ebay: 4.75,
+        note: "Paul ordered three thousand before noticing that the card contained neither a job title nor any way to contact him.",
+        card: { showOnly: true }
+      },
+      {
+        name: "A Title Appears",
+        printed: 5000,
+        remaining: 4762,
+        ebay: 7.99,
+        note: "The second run successfully explains what Paul does. It still provides no means of reaching him.",
+        card: { title: "Executive Producer" }
+      },
+      {
+        name: "Radio Authority Edition",
+        printed: 7500,
+        remaining: 7319,
+        ebay: 13.50,
+        note: "Paul added the 97.4 FM affiliation and increased the order because the design now looked ‘basically national.’ Still no email.",
+        card: { title: "Executive Producer", extra: "As Heard on 97.4 FM" }
+      },
+      {
+        name: "Personal Email Breakthrough",
+        printed: 10000,
+        remaining: 9688,
+        ebay: 21.04,
+        note: "At last: contact information. Paul celebrated by ordering ten thousand cards using the address he would soon decide looked insufficiently official.",
+        card: { title: "Executive Producer", email: "paul@themisogynypodcast.com" }
+      },
+      {
+        name: "Official Producer Address",
+        printed: 12000,
+        remaining: 11746,
+        ebay: 38.88,
+        note: "Paul replaced his perfectly functional personal address with producer@ and called the entire previous run obsolete.",
+        card: { title: "Executive Producer", email: "producer@themisogynypodcast.com" }
+      },
+      {
+        name: "The Exeuctive Disaster",
+        printed: 25000,
+        remaining: 24991,
+        ebay: 314.69,
+        note: "His largest and most confident order. Paul approved the proof personally. He noticed ‘Exeuctive’ nine cards into the run.",
+        card: { title: "Exeuctive Producer", misspelled: true, email: "producer@themisogynypodcast.com" }
+      }
+    ];
+
+    const box = document.getElementById("cardBox");
+    const selectedCard = document.getElementById("selectedCard");
+
+    function cardMarkup(design) {
+      const c = design.card;
+      return `
+        <div class="business-card">
+          <div class="name">Paul Emerson</div>
+          ${c.title ? `<div class="title ${c.misspelled ? "misspelled" : ""}">${c.title}</div>` : ""}
+          <div class="show">The Misogyny Podcast</div>
+          ${c.extra ? `<div class="extra">${c.extra}</div>` : ""}
+          ${c.email ? `<div class="email">${c.email}</div>` : ""}
+        </div>`;
+    }
+
+    function selectCard(index) {
+      const design = cardDesigns[index];
+      document.querySelectorAll(".card-tab").forEach((button, i) => {
+        button.setAttribute("aria-pressed", String(i === index));
+      });
+      selectedCard.innerHTML = cardMarkup(design);
+      document.getElementById("designName").textContent = design.name;
+      document.getElementById("version").textContent = `Print Run ${index + 1} of ${cardDesigns.length}`;
+      document.getElementById("printed").textContent = design.printed.toLocaleString();
+      document.getElementById("distributed").textContent = (design.printed - design.remaining).toLocaleString();
+      document.getElementById("inventory").textContent = design.remaining.toLocaleString();
+      document.getElementById("ebay").textContent = design.ebay.toLocaleString("en-US", { style: "currency", currency: "USD" });
+      document.getElementById("remaining").textContent = `${design.remaining.toLocaleString()} cards left`;
+      document.getElementById("note").textContent = design.note;
+    }
+
+    cardDesigns.forEach((design, index) => {
+      const button = document.createElement("button");
+      button.className = "card-tab";
+      button.type = "button";
+      button.setAttribute("aria-label", `Inspect ${design.name}`);
+      button.setAttribute("aria-pressed", "false");
+      button.innerHTML = cardMarkup(design);
+      button.addEventListener("click", () => selectCard(index));
+      box.appendChild(button);
+    });
+
+    selectCard(0);
+  </script>
+</body>
+</html>
