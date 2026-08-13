@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Do You Need to Replace Your Wife? — Flowchart</title>
+  <style>
+    :root { --ink:#080808; --paper:#f6f4ef; --pink:#ff2bd6; --lime:#39ff14; --cyan:#00e5ff; --yellow:#fffb00; --purple:#8c00ff; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; padding: 30px 18px 60px; color: var(--ink); background: var(--paper);
+      background-image: radial-gradient(#c9c6bf 1px, transparent 1px); background-size: 20px 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    main { width: min(1000px, 100%); margin: auto; }
+    h1 { margin: 0 0 8px; font: 900 clamp(2rem,6vw,4rem)/.95 Impact,"Arial Black",sans-serif; text-transform: uppercase; letter-spacing: .015em; }
+    .subtitle { margin: 0 0 26px; font-weight: 700; }
+    .chart {
+      position: relative; width: 100%; aspect-ratio: 1 / 1.14; min-height: 900px;
+      border: 4px solid var(--ink); background: #fff; box-shadow: 10px 10px 0 var(--purple); overflow: hidden;
+    }
+    .lines { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; }
+    .line { fill: none; stroke: var(--ink); stroke-width: 4; stroke-linejoin: round; marker-end: url(#arrow); }
+    .node {
+      position: absolute; z-index: 2; display: grid; place-items: center; padding: 14px; border: 4px solid var(--ink);
+      color: var(--ink); text-align: center; font-weight: 900; text-transform: uppercase; box-shadow: 7px 7px 0 var(--ink);
+    }
+    .start { left: 27%; top: 4%; width: 46%; height: 11%; background: var(--cyan); font-size: clamp(1.25rem,3.5vw,2rem); }
+    .age { left: 33%; top: 22%; width: 34%; height: 13%; background: var(--yellow); font-size: clamp(1.15rem,3vw,1.75rem); }
+    .replace-one { left: 6%; top: 46%; width: 34%; height: 11%; background: var(--lime); font-size: clamp(1.15rem,3vw,1.8rem); }
+    .eventually { right: 6%; top: 43%; width: 36%; height: 15%; background: var(--yellow); font-size: clamp(1.05rem,2.7vw,1.55rem); }
+    .replace-two { left: 17%; top: 73%; width: 31%; height: 11%; background: var(--lime); font-size: clamp(1.15rem,3vw,1.8rem); }
+    .dead { right: 7%; top: 68%; width: 34%; height: 11%; background: var(--pink); font-size: clamp(.95rem,2.5vw,1.45rem); }
+    .replace-three { right: 7%; top: 87%; width: 34%; height: 9%; background: var(--lime); font-size: clamp(1.15rem,3vw,1.8rem); }
+    .branch-label {
+      position: absolute; z-index: 3; padding: 4px 9px; border: 3px solid var(--ink); background: #fff;
+      font-size: .76rem; font-weight: 900; box-shadow: 3px 3px 0 var(--ink);
+    }
+    .age-yes { left: 20%; top: 38%; transform: rotate(-3deg); }
+    .age-no { right: 20%; top: 38%; transform: rotate(3deg); }
+    .future-yes { left: 49%; top: 64%; transform: rotate(-3deg); }
+    .future-no { right: 21%; top: 62%; transform: rotate(3deg); }
+    .footnote { margin: 18px 0 0; font-size: .8rem; font-style: italic; text-align: right; }
+    @media (max-width: 650px) {
+      .chart { min-height: 840px; }
+      .start { left: 16%; width: 68%; }
+      .age { left: 25%; width: 50%; }
+      .replace-one { left: 4%; width: 39%; }
+      .eventually { right: 4%; width: 43%; }
+      .replace-two { left: 6%; width: 42%; }
+      .dead,.replace-three { right: 4%; width: 43%; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Derek's Wife Replacement Protocol</h1>
+    <p class="subtitle">A decision tree engineered to produce one remarkably consistent recommendation.</p>
+    <section class="chart" aria-label="Flowchart deciding whether a man should replace his wife">
+      <svg class="lines" viewBox="0 0 1000 1140" preserveAspectRatio="none" aria-hidden="true">
+        <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#080808"/></marker></defs>
+        <path class="line" d="M500 171 L500 247"/>
+        <path class="line" d="M500 399 L500 435 L230 435 L230 520"/>
+        <path class="line" d="M500 399 L500 435 L760 435 L760 485"/>
+        <path class="line" d="M760 661 L760 705 L325 705 L325 828"/>
+        <path class="line" d="M760 661 L760 775"/>
+        <path class="line" d="M760 900 L760 990"/>
+      </svg>
+      <div class="node start">Do you need to replace your wife?</div>
+      <div class="node age">Is she over 30?</div>
+      <span class="branch-label age-yes">YES</span>
+      <span class="branch-label age-no">NO</span>
+      <div class="node replace-one">Replace Her</div>
+      <div class="node eventually">Will she eventually turn 30?</div>
+      <span class="branch-label future-yes">YES</span>
+      <span class="branch-label future-no">NO</span>
+      <div class="node replace-two">Replace Her</div>
+      <div class="node dead">She Is Probably Dead</div>
+      <div class="node replace-three">Replace Her</div>
+    </section>
+    <p class="footnote">Every pathway has been carefully evaluated by Derek Vale.</p>
+  </main>
+</body>
+</html>

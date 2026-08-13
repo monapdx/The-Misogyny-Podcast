@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Is She Marriage Material? — Flowchart</title>
+  <style>
+    :root { --ink:#080808; --paper:#f6f4ef; --pink:#ff2bd6; --lime:#39ff14; --cyan:#00e5ff; --yellow:#fffb00; --purple:#8c00ff; --red:#ff4d4d; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; padding: 30px 18px 60px; color: var(--ink); background: var(--paper);
+      background-image: radial-gradient(#c9c6bf 1px, transparent 1px); background-size: 20px 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    main { width: min(1060px, 100%); margin: auto; }
+    h1 { margin: 0 0 8px; font: 900 clamp(2rem,6vw,4rem)/.95 Impact,"Arial Black",sans-serif; text-transform: uppercase; letter-spacing: .015em; }
+    .subtitle { margin: 0 0 26px; font-weight: 700; }
+    .chart {
+      position: relative; width: 100%; aspect-ratio: 4 / 5.7; min-height: 1320px;
+      border: 4px solid var(--ink); background: #fff; box-shadow: 10px 10px 0 var(--purple); overflow: hidden;
+    }
+    .lines { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; }
+    .line { fill: none; stroke: var(--ink); stroke-width: 4; stroke-linejoin: round; marker-end: url(#arrow); }
+    .reject-bus { fill: none; stroke: var(--red); stroke-width: 7; stroke-linecap: square; }
+    .node {
+      position: absolute; z-index: 2; display: grid; place-items: center; padding: 12px; border: 4px solid var(--ink);
+      color: var(--ink); text-align: center; font-weight: 900; text-transform: uppercase; box-shadow: 7px 7px 0 var(--ink);
+    }
+    .start { left: 28%; top: 2.5%; width: 44%; height: 7%; background: var(--cyan); font-size: clamp(1.15rem,3vw,1.8rem); }
+    .question { left: 24%; width: 44%; height: 7.3%; background: var(--yellow); font-size: clamp(.95rem,2.5vw,1.45rem); }
+    .q1 { top: 12.5%; } .q2 { top: 23%; } .q3 { top: 33.5%; }
+    .q4 { left: 3%; top: 44%; width: 34%; height: 8.5%; background: var(--pink); font-size: clamp(.78rem,2vw,1.2rem); }
+    .q5 { top: 55%; } .q6 { top: 65.5%; } .q7 { top: 76%; }
+    .q8 { left: 3%; top: 85.5%; width: 40%; height: 8%; background: var(--pink); font-size: clamp(.8rem,2.1vw,1.2rem); }
+    .result-yes { left: 27%; top: 96%; width: 42%; height: 3.2%; background: var(--lime); font-size: clamp(.9rem,2.4vw,1.45rem); }
+    .result-no { right: 2.5%; top: 89%; width: 23%; height: 6%; background: var(--red); font-size: clamp(1.2rem,3vw,1.8rem); }
+    .branch-label {
+      position: absolute; z-index: 4; padding: 3px 8px; border: 3px solid var(--ink); background: #fff;
+      font-size: .7rem; font-weight: 900; box-shadow: 3px 3px 0 var(--ink);
+    }
+    .yes-label { left: 47%; }
+    .no-label { right: 17%; color: #a00000; }
+    .l1 { top: 20.5%; } .l2 { top: 31%; } .l3 { top: 41.5%; }
+    .l4 { top: 53%; } .l5 { top: 63%; } .l6 { top: 73.5%; } .l7 { top: 84%; }
+    .virgin-no { left: 14%; top: 40%; }
+    .other-no { left: 33%; top: 52.7%; }
+    .job-yes { left: 13%; top: 83.5%; }
+    .job-no { left: 53%; top: 84.3%; }
+    .quit-yes { left: 25%; top: 94.3%; }
+    .quit-no { right: 26%; top: 88.8%; color: #a00000; }
+    .no-caption {
+      position: absolute; z-index: 3; right: 1.8%; top: 46%; writing-mode: vertical-rl;
+      color: #b00000; font-size: .66rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase;
+    }
+    .footnote { margin: 18px 0 0; font-size: .8rem; font-style: italic; text-align: right; }
+    @media (max-width: 680px) {
+      .chart { min-height: 1180px; }
+      .question { left: 16%; width: 56%; }
+      .start { left: 18%; width: 64%; }
+      .q4,.q8 { left: 2%; width: 43%; }
+      .result-yes { left: 20%; width: 52%; }
+      .result-no { width: 25%; }
+      .yes-label { left: 43%; }
+      .no-label { right: 12%; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Derek's Marriage Material Assessment</h1>
+    <p class="subtitle">Eight simple questions. One narrow route through. Several extremely efficient exits.</p>
+    <section class="chart" aria-label="Flowchart determining whether a woman is marriage material according to Derek">
+      <svg class="lines" viewBox="0 0 1000 1425" preserveAspectRatio="none" aria-hidden="true">
+        <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#080808"/></marker></defs>
+
+        <!-- Main surviving path -->
+        <path class="line" d="M500 135 L500 178"/>
+        <path class="line" d="M500 282 L500 328"/>
+        <path class="line" d="M500 432 L500 477"/>
+        <path class="line" d="M500 581 L500 784"/>
+        <path class="line" d="M500 888 L500 933"/>
+        <path class="line" d="M500 1037 L500 1083"/>
+        <path class="line" d="M500 1187 L500 1365"/>
+
+        <!-- Virgin: no goes to prior-partners question; yes skips it -->
+        <path class="line" d="M365 529 L205 529 L205 627"/>
+        <path class="line" d="M205 748 L205 764 L500 764 L500 784"/>
+
+        <!-- Job: yes goes to quit question; no goes to acceptance -->
+        <path class="line" d="M365 1135 L205 1135 L205 1218"/>
+        <path class="line" d="M205 1332 L205 1350 L480 1350 L480 1365"/>
+
+        <!-- Shared rejection bus -->
+        <path class="reject-bus" d="M875 230 L875 1300"/>
+        <path class="line" d="M720 230 L875 230"/>
+        <path class="line" d="M720 380 L875 380"/>
+        <path class="line" d="M795 685 L875 685"/>
+        <path class="line" d="M720 835 L875 835"/>
+        <path class="line" d="M720 985 L875 985"/>
+        <path class="line" d="M355 685 L875 685"/>
+        <path class="line" d="M410 1275 L875 1275"/>
+        <path class="line" d="M875 1300 L875 1334"/>
+      </svg>
+
+      <div class="node start">Is She Marriage Material?</div>
+      <div class="node question q1">Is She Under 30?</div>
+      <span class="branch-label yes-label l1">YES ↓</span><span class="branch-label no-label l1">NO →</span>
+
+      <div class="node question q2">Is She Attractive?</div>
+      <span class="branch-label yes-label l2">YES ↓</span><span class="branch-label no-label l2">NO →</span>
+
+      <div class="node question q3">Is She a Virgin?</div>
+      <span class="branch-label yes-label l3">YES ↓</span><span class="branch-label virgin-no">NO ↙</span>
+
+      <div class="node q4">Has She Had Sex With Any Guys Other Than You?</div>
+      <span class="branch-label other-no">NO ↘</span><span class="branch-label no-label l4">YES →</span>
+
+      <div class="node question q5">Can She Have Children?</div>
+      <span class="branch-label yes-label l5">YES ↓</span><span class="branch-label no-label l5">NO →</span>
+
+      <div class="node question q6">Has She Given Other Men Children?</div>
+      <span class="branch-label yes-label l6">NO ↓</span><span class="branch-label no-label l6">YES →</span>
+
+      <div class="node question q7">Does She Have a Job?</div>
+      <span class="branch-label job-yes">YES ↙</span><span class="branch-label job-no">NO ↓</span>
+
+      <div class="node q8">Is She Willing to Quit Once Married?</div>
+      <span class="branch-label quit-yes">YES ↘</span><span class="branch-label quit-no">NO →</span>
+
+      <span class="no-caption">Immediate Disqualification Pipeline</span>
+      <div class="node result-no">No</div>
+      <div class="node result-yes">Marriage Material</div>
+    </section>
+    <p class="footnote">No women were consulted during development of this assessment.</p>
+  </main>
+</body>
+</html>

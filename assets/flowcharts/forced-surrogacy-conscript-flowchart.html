@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forced Surrogacy Conscript Assessment — Flowchart</title>
+  <style>
+    :root {
+      --ink:#080808; --paper:#f6f4ef; --pink:#ff2bd6; --lime:#39ff14;
+      --cyan:#00e5ff; --yellow:#fffb00; --purple:#8c00ff; --red:#ff4d4d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; min-height:100vh; padding:30px 18px 60px; color:var(--ink);
+      background-color:var(--paper);
+      background-image:radial-gradient(#c9c6bf 1px,transparent 1px);
+      background-size:20px 20px; font-family:Arial,Helvetica,sans-serif;
+    }
+    main { width:min(1080px,100%); margin:auto; }
+    h1 {
+      margin:0 0 8px; font:900 clamp(2rem,6vw,4rem)/.95 Impact,"Arial Black",sans-serif;
+      text-transform:uppercase; letter-spacing:.015em;
+    }
+    .subtitle { margin:0 0 26px; font-weight:700; }
+    .chart {
+      position:relative; width:100%; aspect-ratio:4 / 5.45; min-height:1340px;
+      border:4px solid var(--ink); background:#fff; box-shadow:10px 10px 0 var(--purple);
+      overflow:hidden;
+    }
+    .lines { position:absolute; inset:0; width:100%; height:100%; z-index:1; }
+    .line {
+      fill:none; stroke:var(--ink); stroke-width:4; stroke-linejoin:round;
+      marker-end:url(#arrow);
+    }
+    .disqualify-bus {
+      fill:none; stroke:var(--red); stroke-width:7; stroke-linecap:square;
+    }
+    .node {
+      position:absolute; z-index:2; display:grid; place-items:center; padding:12px;
+      border:4px solid var(--ink); color:var(--ink); text-align:center; font-weight:900;
+      text-transform:uppercase; box-shadow:7px 7px 0 var(--ink);
+    }
+    .start {
+      left:24%; top:2%; width:52%; height:7.5%; background:var(--cyan);
+      font-size:clamp(1.05rem,2.8vw,1.7rem);
+    }
+    .question {
+      left:27%; width:43%; height:7.2%; background:var(--yellow);
+      font-size:clamp(.95rem,2.5vw,1.4rem);
+    }
+    .q1 { top:12%; } .q2 { top:22.5%; } .q3 { top:33%; } .q4 { top:43.5%; }
+    .q5 { top:54%; }
+    .q6 {
+      left:4%; top:66%; width:38%; height:8%; background:var(--pink);
+      font-size:clamp(.8rem,2.1vw,1.2rem);
+    }
+    .q7 {
+      left:52%; top:77%; width:38%; height:8%; background:var(--pink);
+      font-size:clamp(.85rem,2.2vw,1.25rem);
+    }
+    .disqualified {
+      right:2.5%; top:61%; width:22%; height:7%; background:var(--red);
+      font-size:clamp(.9rem,2.4vw,1.4rem);
+    }
+    .enrolled {
+      left:17%; top:90%; width:38%; height:7%; background:var(--lime);
+      font-size:clamp(.85rem,2.3vw,1.35rem);
+    }
+    .fulfilled {
+      right:4%; top:90%; width:32%; height:7%; background:var(--cyan);
+      font-size:clamp(.9rem,2.4vw,1.4rem);
+    }
+    .branch-label {
+      position:absolute; z-index:4; padding:3px 8px; border:3px solid var(--ink);
+      background:#fff; font-size:.7rem; font-weight:900; box-shadow:3px 3px 0 var(--ink);
+    }
+    .main-yes { left:48%; }
+    .reject { right:15%; color:#a00000; }
+    .l1 { top:19.8%; } .l2 { top:30.3%; } .l3 { top:40.8%; }
+    .l4 { top:51.3%; } .l5 { top:61.8%; }
+    .children-no { left:34%; top:63%; }
+    .children-yes { left:16%; top:63%; }
+    .program-yes { left:25%; top:75%; }
+    .program-no { left:44%; top:75%; }
+    .wedlock-in { right:24%; top:86.5%; }
+    .wedlock-out { left:48%; top:86.5%; }
+    .bus-caption {
+      position:absolute; z-index:3; right:1.5%; top:25%; writing-mode:vertical-rl;
+      color:#b00000; font-size:.66rem; font-weight:900; letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .footnote { margin:18px 0 0; font-size:.8rem; font-style:italic; text-align:right; }
+    @media (max-width:680px) {
+      .chart { min-height:1210px; }
+      .start { left:14%; width:72%; }
+      .question { left:18%; width:54%; }
+      .q6 { left:2%; width:44%; }
+      .q7 { left:48%; width:46%; }
+      .disqualified { width:24%; right:1%; }
+      .enrolled { left:7%; width:46%; }
+      .fulfilled { right:2%; width:40%; }
+      .main-yes { left:44%; }
+      .reject { right:9%; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Derek's Forced Surrogacy Conscript Assessment</h1>
+    <p class="subtitle">A government eligibility screen designed with all the compassion of a tax audit.</p>
+
+    <section class="chart" aria-label="Flowchart determining whether a woman is conscripted into Derek's fictional forced surrogacy program">
+      <svg class="lines" viewBox="0 0 1000 1365" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#080808"/>
+          </marker>
+        </defs>
+
+        <!-- Main eligibility path -->
+        <path class="line" d="M500 130 L500 164"/>
+        <path class="line" d="M500 262 L500 307"/>
+        <path class="line" d="M500 405 L500 450"/>
+        <path class="line" d="M500 548 L500 594"/>
+        <path class="line" d="M500 692 L500 738"/>
+
+        <!-- No prior children: mandatory enrollment -->
+        <path class="line" d="M415 788 L355 788 L355 1225"/>
+
+        <!-- Prior children: ask whether they were part of program -->
+        <path class="line" d="M340 788 L230 788 L230 902"/>
+
+        <!-- Program child: duty fulfilled -->
+        <path class="line" d="M230 1012 L230 1050 L825 1050 L825 1225"/>
+
+        <!-- Not program child: ask wedlock status -->
+        <path class="line" d="M420 957 L650 957 L650 1051"/>
+
+        <!-- In wedlock: duty fulfilled -->
+        <path class="line" d="M760 1160 L825 1160 L825 1225"/>
+
+        <!-- Out of wedlock: mandatory enrollment -->
+        <path class="line" d="M540 1160 L355 1160 L355 1225"/>
+
+        <!-- Shared disqualification pipeline -->
+        <path class="disqualify-bus" d="M875 210 L875 800"/>
+        <path class="line" d="M715 210 L875 210"/>
+        <path class="line" d="M715 354 L875 354"/>
+        <path class="line" d="M715 498 L875 498"/>
+        <path class="line" d="M715 642 L875 642"/>
+        <path class="line" d="M875 800 L875 833"/>
+      </svg>
+
+      <div class="node start">Should She Be Conscripted?</div>
+
+      <div class="node question q1">Is She Fertile?</div>
+      <span class="branch-label main-yes l1">YES ↓</span>
+      <span class="branch-label reject l1">NO →</span>
+
+      <div class="node question q2">Is She Between 18 and 45?</div>
+      <span class="branch-label main-yes l2">YES ↓</span>
+      <span class="branch-label reject l2">NO →</span>
+
+      <div class="node question q3">Is She Married?</div>
+      <span class="branch-label main-yes l3">NO ↓</span>
+      <span class="branch-label reject l3">YES →</span>
+
+      <div class="node question q4">Is She Attractive?</div>
+      <span class="branch-label main-yes l4">NO ↓</span>
+      <span class="branch-label reject l4">YES →</span>
+
+      <div class="node question q5">Has She Given Any Men Children?</div>
+      <span class="branch-label children-yes">YES ↙</span>
+      <span class="branch-label children-no">NO ↓</span>
+
+      <div class="node q6">As Part of This Program?</div>
+      <span class="branch-label program-yes">YES ↓</span>
+      <span class="branch-label program-no">NO →</span>
+
+      <div class="node q7">In or Out of Wedlock?</div>
+      <span class="branch-label wedlock-in">IN →</span>
+      <span class="branch-label wedlock-out">OUT ↙</span>
+
+      <span class="bus-caption">Statutory Disqualification Pipeline</span>
+      <div class="node disqualified">Disqualified</div>
+      <div class="node enrolled">Mandatory Enrollment</div>
+      <div class="node fulfilled">Duty Fulfilled</div>
+    </section>
+
+    <p class="footnote">A fictional policy proposal from a man who should not be permitted near public administration.</p>
+  </main>
+</body>
+</html>
