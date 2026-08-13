@@ -13,7 +13,6 @@ body:
     id: caller-name
     attributes:
       label: Email
-      placeholder: ""
     validations:
       required: true
 
