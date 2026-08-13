@@ -54,6 +54,17 @@ I do ask that you please see the **[FAQ](FAQ.md)** before leaving a nasty voice 
 
 <!-- SUBMISSIONS_TABLE_END -->
 
+## In-World Artifacts
+
+| Category | Artifact |
+|---|---|
+| Spreadsheet | [Female Listeners in Love With Derek](https://monapdx.github.io/The-Misogyny-Podcast/assets/dereks-humiliation-index.html) |
+| Business Cards | [Paul’s Business Card Box](https://monapdx.github.io/The-Misogyny-Podcast/assets/pauls-business-cards/pauls-business-card-box.html) |
+| Flowchart | [Derek’s Field Guide to Humanity](https://monapdx.github.io/The-Misogyny-Podcast/assets/flowcharts/human-flowchart.html) |
+| Flowchart | [Derek’s Wife Replacement Protocol](https://monapdx.github.io/The-Misogyny-Podcast/assets/flowcharts/replace-your-wife-flowchart.html) |
+| Flowchart | [Derek’s Marriage Material Assessment](https://monapdx.github.io/The-Misogyny-Podcast/assets/flowcharts/marriage-material-flowchart.html) |
+| Flowchart | [Derek’s Forced Surrogacy Conscript Assessment](https://monapdx.github.io/The-Misogyny-Podcast/assets/flowcharts/forced-surrogacy-conscript-flowchart.html) |
+
 <h2 align="center">Disclaimer</h2>
 
 <p align="center"> <i>The Misogyny Podcast is a work of fiction, satire, parody, and dark humor. Derek Vale is a fictional character, and his statements, beliefs, advice, and alleged experiences do not represent the views of the author. The project depicts misogyny, sexual violence, homophobia, reproductive coercion, and other forms of prejudice in order to examine and ridicule the rhetoric used to excuse them—it does not endorse that rhetoric.* </i>
