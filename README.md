@@ -44,13 +44,13 @@ I do ask that you please see the **[FAQ](FAQ.md)** before leaving a nasty voice 
 
 | Type | Submission and Email Thread |
 |---|---|
-| Guest Pitch | [DR. ALTERS — WEIRD SCIENCE SURGICAL COLLECTIVE](submissions/html/guest-pitch-dr-alters-electrocution.html) |
-| Hate Mail | [HATE MAIL COLLECTION](submissions/html/hatemail-electrocution.html) |
-| Challenge | [YOUR CLAIMS ABOUT THE ROLE OF RAPE — UNIVERSITY STUDENT](submissions/html/challenge-university-student-electrocution.html) |
-| Question | [NEED GUIDANCE AND GOD — SWOLLENWOMB](submissions/htmlquestion-need-god-and-guidance-electrocution.html) |
-| Question | [DESPERATELY SEEKING MOTHERHOOD](submissions/html/question-seeking-motherhood-electrocution.html) |
-| Support | [ARE YOU STILL SINGLE? — GUILTYPLEASURE](submissions/html/support-guilty-pleasure-electrocution.html) |
-| Support | [WOMEN ARE THE PROBLEM — DONE WITH THESE BITCHES](submissions/html/support-women-are-the-problem-electrocution.html) |
+| Guest Pitch | [DR. ALTERS — WEIRD SCIENCE SURGICAL COLLECTIVE](submissions/guest-pitch-dr-alters-electrocution.md) |
+| Hate Mail | [HATE MAIL COLLECTION](submissions/hatemail-electrocution.md) |
+| Challenge | [YOUR CLAIMS ABOUT THE ROLE OF RAPE — UNIVERSITY STUDENT](submissions/challenge-university-student-electrocution.md) |
+| Question | [NEED GUIDANCE AND GOD — SWOLLENWOMB](submissions/question-need-god-and-guidance-electrocution.md) |
+| Question | [DESPERATELY SEEKING MOTHERHOOD](submissions/question-seeking-motherhood-electrocution.md) |
+| Support | [ARE YOU STILL SINGLE? — GUILTYPLEASURE](submissions/support-guilty-pleasure-electrocution.md) |
+| Support | [WOMEN ARE THE PROBLEM — DONE WITH THESE BITCHES](submissions/support-women-are-the-problem-electrocution.md) |
 
 <!-- SUBMISSIONS_TABLE_END -->
 
