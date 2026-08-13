@@ -44,13 +44,13 @@ I do ask that you please see the **[FAQ](FAQ.md)** before leaving a nasty voice 
 
 | Type | Submission and Email Thread |
 |---|---|
-| Guest Pitch | [DR. ALTERS — WEIRD SCIENCE SURGICAL COLLECTIVE](submissions/guest-pitch-dr-alters-electrocution.md) |
-| Hate Mail | [HATE MAIL COLLECTION](submissions/hatemail-electrocution.md) |
-| Challenge | [YOUR CLAIMS ABOUT THE ROLE OF RAPE — UNIVERSITY STUDENT](submissions/challenge-university-student-electrocution.md) |
-| Question | [NEED GUIDANCE AND GOD — SWOLLENWOMB](submissions/question-need-god-and-guidance-electrocution.md) |
-| Question | [DESPERATELY SEEKING MOTHERHOOD](submissions/question-seeking-motherhood-electrocution.md) |
-| Support | [ARE YOU STILL SINGLE? — GUILTYPLEASURE](submissions/support-guilty-pleasure-electrocution.md) |
-| Support | [WOMEN ARE THE PROBLEM — DONE WITH THESE BITCHES](submissions/support-women-are-the-problem-electrocution.md) |
+| Guest Pitch | [DR. ALTERS — WEIRD SCIENCE SURGICAL COLLECTIVE](https://monapdx.github.io/The-Misogyny-Podcast/submissions/guest-pitch-dr-alters-electrocution.html) |
+| Hate Mail | [HATE MAIL COLLECTION](https://monapdx.github.io/The-Misogyny-Podcast/submissions/hatemail-electrocution.html) |
+| Challenge | [YOUR CLAIMS ABOUT THE ROLE OF RAPE — UNIVERSITY STUDENT](https://monapdx.github.io/The-Misogyny-Podcast/submissions/challenge-university-student-electrocution.html) |
+| Question | [NEED GUIDANCE AND GOD — SWOLLENWOMB](https://monapdx.github.io/The-Misogyny-Podcast/submissions/question-need-god-and-guidance-electrocution.html) |
+| Question | [DESPERATELY SEEKING MOTHERHOOD](https://monapdx.github.io/The-Misogyny-Podcast/submissions/question-seeking-motherhood-electrocution.html) |
+| Support | [ARE YOU STILL SINGLE? — GUILTYPLEASURE](https://monapdx.github.io/The-Misogyny-Podcast/submissions/support-guilty-pleasure-electrocution.html) |
+| Support | [WOMEN ARE THE PROBLEM — DONE WITH THESE BITCHES](https://monapdx.github.io/The-Misogyny-Podcast/submissions/support-women-are-the-problem-electrocution.html) |
 
 <!-- SUBMISSIONS_TABLE_END -->
 
