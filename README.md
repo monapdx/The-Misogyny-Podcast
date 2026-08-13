@@ -58,8 +58,8 @@ I do ask that you please see the **[FAQ](FAQ.md)** before leaving a nasty voice 
 
 | Category | Artifact |
 |---|---|
-| Spreadsheet | [Female Listeners in Love With Derek](https://monapdx.github.io/The-Misogyny-Podcast/assets/dereks-humiliation-index.html) |
-| Business Cards | [Paul’s Business Card Box](https://monapdx.github.io/The-Misogyny-Podcast/assets/pauls-business-cards/pauls-business-card-box.html) |
+| Spreadsheet | [Female Listeners in Love With Derek](https://monapdx.github.io/The-Misogyny-Podcast/assets/dereks-spreadsheet.html) |
+| Business Cards | [Paul’s Business Card Box](https://monapdx.github.io/The-Misogyny-Podcast/assets/paul-business-cards/pauls-business-card-box.html) |
 | Flowchart | [Derek’s Field Guide to Humanity](https://monapdx.github.io/The-Misogyny-Podcast/assets/flowcharts/human-flowchart.html) |
 | Flowchart | [Derek’s Wife Replacement Protocol](https://monapdx.github.io/The-Misogyny-Podcast/assets/flowcharts/replace-your-wife-flowchart.html) |
 | Flowchart | [Derek’s Marriage Material Assessment](https://monapdx.github.io/The-Misogyny-Podcast/assets/flowcharts/marriage-material-flowchart.html) |
