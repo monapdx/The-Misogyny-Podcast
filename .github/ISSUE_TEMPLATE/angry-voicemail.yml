@@ -1,8 +1,8 @@
 name: "📞 Leave an Angry Voicemail"
 description: "Tell Derek exactly what you think of him. He may regret giving you the number."
-title: "[ANGRY VOICEMAIL] "
+title: "[Hate Mail] "
 labels:
-  - "call-in: angry"
+  - "hate-mail"
 body:
   - type: markdown
     attributes:
