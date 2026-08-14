@@ -2,7 +2,7 @@ name: "📞 Leave an Angry Voicemail"
 description: "Tell Derek exactly what you think of him. He may regret giving you the number."
 title: "Hate Mail: "
 labels:
-  - "call-in: angry"
+  - ""
 body:
   - type: markdown
     attributes:
