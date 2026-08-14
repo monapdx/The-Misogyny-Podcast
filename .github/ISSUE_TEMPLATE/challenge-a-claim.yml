@@ -1,8 +1,8 @@
 name: "🎙️Challenge a Claim"
 description: "Bring facts, reasoning, or the context Derek conveniently misplaced."
-title: ""
+title: "Challenge: "
 labels:
-  - "call-in: challenge"
+  - ""
 body:
   - type: markdown
     attributes:
