@@ -1,6 +1,6 @@
 name: "📫 Pitch Yourself as a Guest"
 description: "Request a seat across from Derek's unnecessarily expensive microphone."
-title: "[GUEST PITCH] "
+title: ""
 labels:
   - "call-in: guest pitch"
 body:
@@ -10,10 +10,10 @@ body:
         Think you belong on **The Misogyny Podcast**? Convince Derek. Fictional characters and satirical personas are encouraged. Do not impersonate a real person.
 
   - type: input
-    id: guest-name
+    id: email
     attributes:
-      label: Guest name or pseudonym
-      placeholder: "Dr. Evan Reason"
+      label: Email
+      placeholder: "alleged.expert@example.com"
     validations:
       required: true
 
