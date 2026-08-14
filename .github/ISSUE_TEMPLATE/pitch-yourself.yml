@@ -1,8 +1,8 @@
 name: "📫 Pitch Yourself as a Guest"
 description: "Request a seat across from Derek's unnecessarily expensive microphone."
-title: ""
+title: "Guest Pitch: "
 labels:
-  - "call-in: guest pitch"
+  - ""
 body:
   - type: markdown
     attributes:
