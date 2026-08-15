@@ -1,4 +1,7 @@
 
+
+### Dr. Alters Interview Part 1
+
 Greetings listeners, it's Derek Vale, your host of the Misogyny Podcast.
 
 Today we have a great interview scheduled for you. We'll be talking with Dr. Alters of the Weird Science Surgical Group, his plastic surgery practice that's been offering women their services for nearly twenty-five years.
@@ -184,6 +187,10 @@ HOST: And you offer financing?
 ALTERS: Absolutely. A woman’s appearance should never deteriorate merely because her husband lacks immediate liquidity.
 
 HOST: Beautifully put. Stay with us. When we return, Dr. Alters will tell us about the strangest requests he’s received, the procedures women most commonly regret refusing, and why he believes “aging gracefully” is just surrender with better public relations.
+
+
+---
+### Dr. Alters Interview Part 2
 
 HOST: Welcome back, listeners. I’m speaking with Dr. Alters of the Weird Science Surgical Group, where women are encouraged to stop treating preventable decline as a personality trait.
 
