@@ -66,6 +66,7 @@ I do ask that you please see the **[FAQ](FAQ.md)** before leaving a nasty voice 
 | Flowchart | [Derek’s Wife Replacement Protocol](https://monapdx.github.io/The-Misogyny-Podcast/assets/flowcharts/replace-your-wife-flowchart.html) |
 | Flowchart | [Derek’s Marriage Material Assessment](https://monapdx.github.io/The-Misogyny-Podcast/assets/flowcharts/marriage-material-flowchart.html) |
 | Flowchart | [Derek’s Forced Surrogacy Conscript Assessment](https://monapdx.github.io/The-Misogyny-Podcast/assets/flowcharts/forced-surrogacy-conscript-flowchart.html) |
+| Generator | [Interview Episode Generator](https://monapdx.github.io/The-Misogyny-Podcast/assets/interview-episode-generator.html) |
 
 <h2 align="center">Disclaimer</h2>
 
