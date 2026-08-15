@@ -1,8 +1,8 @@
 name: "📞 Leave an Angry Voicemail"
 description: "Tell Derek exactly what you think of him. He may regret giving you the number."
-title: "[ANGRY VOICEMAIL] "
+title: "Hate Mail: "
 labels:
-  - "call-in: angry"
+  - ""
 body:
   - type: markdown
     attributes:
@@ -10,10 +10,10 @@ body:
         Thanks for calling **The Misogyny Podcast**. This is a fictional, participatory satire project. Stay in character if you like—but do not threaten or harass real people.
 
   - type: input
-    id: caller-name
+    id: email
     attributes:
-      label: Name or pseudonym
-      placeholder: "Anonymous, regrettably, is allowed"
+      label: Email
+      placeholder: "furious.listener@example.com"
     validations:
       required: true
 

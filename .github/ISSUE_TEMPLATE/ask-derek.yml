@@ -1,6 +1,6 @@
 name: "❓ Ask Derek Anything"
 description: "Request advice from a man who has never mistaken confidence for competence."
-title: "[ASK DEREK] "
+title: "Ask Derek: "
 labels:
   - "call-in: question"
 body:
@@ -10,10 +10,10 @@ body:
         Submit a fictional listener question for Derek to answer in a future episode. Please do not rely on Derek Vale for actual life advice.
 
   - type: input
-    id: caller-name
+    id: email
     attributes:
-      label: Name or pseudonym
-      placeholder: "Confused in Cleveland"
+      label: Email
+      placeholder: "confused.in.cleveland@example.com"
     validations:
       required: true
 

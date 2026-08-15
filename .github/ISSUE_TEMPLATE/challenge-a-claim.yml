@@ -1,8 +1,8 @@
 name: "🎙️Challenge a Claim"
 description: "Bring facts, reasoning, or the context Derek conveniently misplaced."
-title: "[CHALLENGE] "
+title: "Challenge: "
 labels:
-  - "call-in: challenge"
+  - ""
 body:
   - type: markdown
     attributes:
@@ -10,10 +10,10 @@ body:
         You have reached **The Misogyny Podcast Department of Unwanted Context**. This is a fictional, participatory satire project.
 
   - type: input
-    id: caller-name
+    id: email
     attributes:
-      label: Name or pseudonym
-      placeholder: "Your name"
+      label: Email
+      placeholder: "unwanted.context@example.com"
     validations:
       required: true
 
