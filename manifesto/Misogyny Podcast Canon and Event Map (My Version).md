@@ -180,130 +180,81 @@ Derek repeatedly frames disputes as **natural versus unnatural**, not right vers
 
 ## 10. Paul’s business-card epic
 
-- Paul prints **3,000 business cards** identifying him as Executive Producer of *The Misogyny Podcast*.
-- The entire first printing contains no phone number, email address, URL, or other contact method. Each card is a tiny commemorative plaque honoring Paul’s employment.
-- Paul refuses to discard them. A corrected batch containing his email address becomes mixed indiscriminately with the useless originals.
-- Handing someone a card requires inspecting several until Paul finds one that can actually contact him.
+- Paul prints **3,000 business cards** identifying him as Executive Producer of *The Misogyny Podcast*. The entire first printing contains no phone number, email address, URL, or other contact method. Each card is a tiny commemorative plaque honoring Paul’s employment. He refuses to discard them. 
+- A corrected batch containing his email address becomes mixed indiscriminately with the useless originals. Handing someone a card requires inspecting several until Paul finds one that actually contains contact info.
 - Derek already possesses several defective cards. Paul calls them “first editions” that may become valuable someday.
-- Paul initially distributes the cards at his day job, including to customers. HR nearly fires him; he argues that customers were physically leaving when he handed them out and therefore he was not promoting the show during work.
-- He stops giving them to customers but continues leaving them in shared spaces, handing them out off the clock, and treating the written warning as a narrow procedural rule.
-- One card later falls from Paul’s pants during a one-night stand and remains under a sorority woman’s bed. Six months later she finds it and only then remembers “that guy.”
-- After the podcast is mentioned on terrestrial radio, Paul orders cards reading **“As Heard on 94.7 FM.”** He reuses the original design file and again omits all contact information.
+- Paul initially distributes the cards at his day job, including to customers. HR nearly fires him; he argues that customers were physically leaving when he handed them out and therefore he was not promoting the show during work. He stops giving them to customers but continues leaving them in shared spaces, handing them out off the clock, and treating the written warning as a narrow procedural rule.
+- One card later falls from Paul’s pants during a one-night stand and remains under a sorority woman’s bed. Six months later she finds it and only then remembers “that guy.” 
+- After finding the card, she calls into a radio segment called *"Someone Beat Me to Ghosting Tyhem After One Date"* and tells the story of how Paul changed his number the next day after they hooked up. In the story, she mentions the podcast on air, which Paul hears as he's driving to work. 
+- Paul orders cards reading **“As Heard on 94.7 FM.”** He reuses the original design file and again omits all contact information.
 - The inventory eventually contains original contactless cards, corrected cards, and radio-edition contactless cards, all mixed together.
-- A random owner auctions an original card after the radio mention. A joke bidding war closes around **$96.50**.
-- Paul treats the secondary-market sale, from which he earns nothing, as proof that his mistake created a collectible.
-- Paul lists his own cards and receives no bids. He claims counterfeiters flooded the market, despite the only new listings being his.
-- Former coworkers quietly sell cards he inflicted on them during his workplace networking phase. Buyers prefer purchasing from Paul’s “victims” rather than supporting Paul.
-- The most valuable card was left in the break-room refrigerator in place of a sandwich Paul stole. Its provenance sends the auction to **$237.50**.
-- Paul demands a share of the sale because the listing uses his identity and the predictive claim that the card would someday outvalue the sandwich.
+- A random owner auctions an original card after the radio mention. A joke bidding war closes around **$96.50**. Paul treats the secondary-market sale, from which he earns nothing, as proof that his mistake created a collectible. He then tries to list his own cards and receives no bids. He claims counterfeiters flooded the market, despite the only new listings being his.
+- Former coworkers quietly sell cards he inflicted on them during his workplace networking phase. Buyers prefer purchasing from Paul’s “victims” rather than supporting Paul. The most valuable card was left in the break-room refrigerator in place of a sandwich Paul stole. Its provenance sends the auction to **$237.50**.
 - Corrected cards finally work after the radio story only by letting strangers email Paul jokes about ghosting, failed business-card design, and withdrawn romantic interest.
 - Paul retroactively calls the contactless originals a privacy-forward limited edition. Their defect now protects owners from contacting him.
 
-## 11. Paul and the sorority woman
+## 11. Paul Joins The Sorority Girls
 
-- Paul attends one of the sorority listening parties and enjoys himself: he laughs at Derek with the women, supplies production trivia, eats their food, drinks their alcohol, and stays too long while imagining himself intellectually above the group.
-- During a later drunk voicemail, a sorority caller uses an observation Paul warned would make Derek lose his mind and accidentally attributes it to Paul.
-- Derek learns that Paul supplied hostile female listeners with privileged material designed to wound him. Their first serious rift begins.
-- To Derek, Paul has moved from male camaraderie into collaboration with the enemy.
-- Paul later repairs the relationship by pretending one of Derek’s ordinary, grandiose statements changed his life and had never been articulated before.
-- Paul rolls his eyes throughout the reconciliation message. He knows originality and clarity are Derek’s exact pressure points and wants his access restored.
-- Paul treats private screenshots as insider currency with an attractive sorority woman. He implies she alone has privileged access and expects the false intimacy to produce sex.
-- Paul thinks this will demonstrate how easily women are manipulated by men who want to “hit it and bail,” even though she may understand the arrangement and want one casual encounter herself.
-- Immediately after sleeping with her, Paul changes his phone number, blocks her email, leaves group chats, and reorganizes accounts before she can decide whether to contact him.
-- Paul manufactures the appearance of escaping female attachment to avoid learning that she might not want him again.
+- Paul attends one of the sorority listening parties and enjoys himself: he laughs at Derek with the women, supplies production trivia, eats their food, drinks their alcohol, and stays too long while imagining himself intellectually above the group. During a later drunk voicemail, a sorority caller uses an observation Paul warned would make Derek lose his mind and accidentally attributes it to Paul.
+- Derek learns that Paul supplied hostile female listeners with privileged material designed to wound him. Their first serious rift begins. In Derek's mind, Paul has moved from male camaraderie into collaboration with the enemy.
+- Paul later repairs the relationship by pretending one of Derek’s ordinary, grandiose statements changed his life and had never been articulated before. He rolls his eyes throughout the reconciliation message. He knows originality and clarity are Derek’s exact pressure points and wants his access restored.
+- Paul treats private screenshots as insider currency with an attractive sorority woman. He implies she alone has privileged access and expects the false intimacy to produce sex. He thinks this will demonstrate how easily women are manipulated by men who want to “hit it and bail,” even though she may understand the arrangement and want one casual encounter herself.
+- Immediately after sleeping with her, Paul changes his phone number, blocks her email, leaves group chats, and reorganizes accounts before she can decide whether to contact him. He manufactures the appearance of escaping female attachment to avoid learning that she might not want him again.
 - The woman tells her friends: **“I slept with Paul and he entered witness protection.”**
-- One year later, Paul hears her voice on a radio segment called **“Someone Beat Me to Ghosting Them After One Date.”**
-- She explains that she intended not to contact him again, but Paul disconnected his number and vanished before she could ghost him.
-- She identifies him as Executive Producer of a tiny, official-sounding podcast about how unfair it is that women have rights. The host is astonished that *The Misogyny Podcast* is its real name and not satire.
-- Paul briefly experiences the radio mention as media exposure before realizing the entire segment exists to humiliate him.
+- One year later, Paul hears her voice on a radio segment called **“Someone Beat Me to Ghosting Them After One Date.”** She explains that she intended not to contact him again, but Paul disconnected his number and vanished before she could ghost him. She identifies him as Executive Producer of a tiny, official-sounding podcast about how unfair it is that women have rights. The host is astonished that *The Misogyny Podcast* is its real name and not satire.
+
 - The radio story creates the podcast’s first major influx of attention and hate mail. Paul calls hundreds of mocking messages “going viral”; Derek asks how many contain substantive agreement.
 
-## 12. Felicia enters the story
+## 12. Felicia Enters the Story
 
-- **Felicia**, using the pseudonym **Swollen Womb** and the email address `notagain@freemail.com`, sends a frightened listener message.
-- She is nineteen, heavily pregnant with her third child, has been raped repeatedly, was expelled from school, is isolated, and wonders whether she is crazy.
-- Her rough spelling, capitalization, and blunt phrasing make her sound young and overwhelmed rather than like a polished plot device.
+- **Felicia**, using the pseudonym **Swollen Womb** and the email address `notagain@freemail.com`, sends a frightened listener message. She is nineteen, heavily pregnant with her third child, has been raped repeatedly, was expelled from school, is isolated, and wonders whether she is crazy. Her rough spelling, capitalization, and blunt phrasing make her sound young and overwhelmed rather than like a polished plot device.
 - Derek sees Felicia primarily as proof of his claim that women naturally continue pregnancies caused by rape.
-- Paul initially sees her as hilarious content, a potentially attractive body, and a possible interview booking.
-- Paul proposes grotesque response options: blame her, use her as ideological evidence, request a full-body “verification” photo, or put her on the show.
-- Once Paul sees her full-body photograph, he becomes intensely fixated. Pregnancy, vulnerability, repeated assault, and attraction fuse together in his mind.
-- In a private email sent before meeting her, Paul calls her **“rape meat,”** says he can see why men love raping her, and treats the photograph as proof of Derek’s theory.
-- Derek receives and retains this email. It later becomes evidence that Paul eroticized precisely the outcome he will claim never entered his mind.
-- Derek is also sexually aroused by Felicia’s photo and masturbates to it privately several times. He considers himself morally superior because he handles the arousal with adult composure rather than disordering production.
-- If pressed, Derek would call masturbation while imagining what they would do to Felicia the obvious male response. His moral distinction is that Paul “went too far.”
+- Paul initially sees her as hilarious content, a potentially attractive body, and a possible interview booking. He proposes grotesque response options: blame her, use her as ideological evidence, request a full-body “verification” photo, or put her on the show.
+- Once Paul sees her full-body photograph, he becomes intensely fixated. Pregnancy, vulnerability, repeated assault, and attraction fuse together in his mind. In a private email sent before meeting her, Paul calls her **“rape meat,”** says he can see why men love raping her, and treats the photograph as proof of Derek’s theory. Derek receives and retains this email. It later becomes evidence that Paul eroticized precisely the outcome he will claim never entered his mind.
+- Derek is also sexually aroused by Felicia’s photo and masturbates to it privately several times. He considers himself morally superior because he handles the arousal with adult composure rather than disordering production. If pressed, Derek would call masturbation while imagining what they would do to Felicia the obvious male response. His moral distinction is that Paul “went too far.”
 
-## 13. Paul’s manipulation of Felicia
+## 13. Paul’s Uncontrollable Fixation on Felicia 
 
-- Paul wants access to Felicia while she remains in the final month of pregnancy. The appeal is not pregnancy alone but her humiliation and vulnerability.
-- Canonically, Paul wants her to feel ashamed and violated **during the encounter itself**. An earlier suggestion that he wanted her to regret it afterward is superseded.
-- Neither Paul nor Derek initially regards this desire as wrong because their shared system defines Felicia as a body made for male use.
-- Their disagreement is administrative: Paul wants immediate sexual access; Derek wants the show to extract its value first.
-- Derek’s boundary is that sex must occur only after any appearance is recorded, edited, and published. The show has first claim; Paul may have what remains.
-- Paul considers meeting Felicia behind Derek’s back as a supposed warmup and coaching session before inviting her onto the show.
-- He plans to impersonate the first caring man in her life, offer marriage and adoption of her children, secure her appearance and sexual access, then disappear.
-- Paul’s false empathy leaks immediately: he says he is sorry, then adds that the repeated rapes may be her fault, then claims what her children need is a man like him.
-- He asks whether she has ever had sex with a man who was not raping her, supplies her answers for her, and positions himself as the person who can show her the difference.
-- Paul already intends to ensure that sex with him is not a better experience. The promise of care is a superficial route to another violation.
-- This is not previously routine behavior for Paul. Felicia’s particular combination of pregnancy, isolation, self-blame, and vulnerability awakens an unexpectedly powerful capacity for sexual cruelty.
-- Paul knows better but later describes himself as unable to control the fixation. His planning, secrecy, waiting, coaching, and alibi-building demonstrate that he can control himself whenever accountability requires it.
-- Paul writes Felicia as though meeting him is an official guest procedure authorized by Derek. He requests a full-body photograph and borrows the podcast’s institutional authority.
-- Felicia believes she has effectively been invited onto the show, that Paul is trustworthy, that an in-home private meeting is required, and that the photograph was a standard production request.
+- Paul wants access to Felicia while she remains in the final month of pregnancy. The appeal is not pregnancy alone but her humiliation and vulnerability. He wants her to feel ashamed and violated **during the encounter itself**. 
 
-## 14. The assault and immediate institutional response
+- Their disagreement is administrative: Paul wants immediate sexual access; Derek wants the show to extract its value first. Derek’s boundary is that sex must occur only after any appearance is recorded, edited, and published. The show has first claim; Paul may have what remains.
+- Paul considers meeting Felicia behind Derek’s back as a supposed warmup and coaching session before inviting her onto the show. He plans to impersonate the first caring man in her life, offer marriage and adoption of her children, secure her appearance and sexual access, then disappear.
+- Paul’s false empathy leaks immediately: he says he is sorry, then adds that the repeated rapes may be her fault, then claims what her children need is a man like him. He asks whether she has ever had sex with a man who was not raping her, supplies her answers for her, and positions himself as the person who can show her the difference.
+- Paul already intends to ensure that sex with him is not a better experience. The promise of care is a superficial route to another violation. This is not previously routine behavior for Paul. Felicia’s particular combination of pregnancy, isolation, self-blame, and vulnerability awakens an unexpectedly powerful capacity for sexual cruelty. He knows better but later describes himself as unable to control the fixation. His planning, secrecy, waiting, coaching, and alibi-building demonstrate that he can control himself whenever accountability requires it.
+- Paul writes Felicia as though meeting him is an official guest procedure authorized by Derek. He requests a full-body photograph and borrows the podcast’s institutional authority. Felicia believes she has effectively been invited onto the show, that Paul is trustworthy, that an in-home private meeting is required, and that the photograph was a standard production request.
 
-- Paul goes to Felicia’s home believing the first meeting will be grooming and preparation, not a planned assault.
-- He coaches her into agreeing with him, rushes into becoming “the first man to make love to her,” and obtains initial apparent agreement within the manipulation he created.
-- Felicia clearly and unmistakably changes her mind and tells him to stop. Paul understands her and continues because he is close to orgasm.
-- The assault is therefore not an accident or loss of agency. Paul’s surprise concerns what he discovers himself capable of.
-- Felicia’s unwillingness may be what intensifies Paul’s pleasure and pushes him to climax, a fact he cannot admit but cannot stop replaying.
+## 14. The Assault and Aftermath
+
+- Paul goes to Felicia’s home believing the first meeting will be grooming and preparation, not a planned assault. He coaches her into agreeing with him, rushes into becoming “the first man to make love to her,” and obtains initial apparent agreement within the manipulation he created.
+- Felicia clearly and unmistakably changes her mind and tells him to stop. Paul understands her and continues because he is close to orgasm. Felicia’s unwillingness may be what intensifies Paul’s pleasure and pushes him to climax, a fact he cannot admit but cannot stop replaying.
 - Paul flees half-dressed, with clothes and shoes not fully on, running to his car rather than checking on Felicia or sustaining any story of mutuality.
-- Derek confronts him with the binary question: **“Did she tell you to stop, Paul?”** Paul never answers directly; he cites how far along the encounter was and how close he was to finishing.
-- Derek recognizes that Paul crossed a line but prioritizes the fact that Felicia was a prospective guest, that the show’s reputation could be ruined, and that she is a woman only after those concerns.
-- Paul comforts himself that Felicia will not call police or tell anyone and expresses relief that she was already pregnant, eliminating pregnancy as evidence of what he did.
-- Their immediate policy response is to quietly stop inviting women onto the show. Paul remains in guest relations; women collectively lose access because one man proved dangerous to them.
-- Derek insists there be no official announcement. Concealment and institutional continuity begin immediately.
+- Derek confronts him with the binary question: **“Did she tell you to stop, Paul?”** Paul never answers directly; he cites how far along the encounter was and how close he was to finishing. Derek recognizes that Paul crossed a line but prioritizes the fact that Felicia was a prospective guest, that the show’s reputation could be ruined, and that she is a woman only after those concerns.
+- Their immediate policy response is to quietly stop inviting women onto the show. Paul remains in guest relations; women collectively lose access because one man proved dangerous to them. Derek insists there be no official announcement. Concealment and institutional continuity begin immediately.
 
-## 15. Paul’s guilt and collapse
+## 15. Paul’s Meltdown and Collapse
 
 - Guilt enters Paul as irritation, avoidance, insomnia, compulsive checking, deleted drafts, attempts to find advance permission, and disproportionate hostility whenever rape or female guests are mentioned.
-- He cannot stop replaying his false tenderness, Felicia’s clear refusal, his own pleasure, the possibility that refusal excited him, the awkward aftermath, and his half-dressed flight.
-- His usual escape hatch—turning everything into a joke—no longer works. He sends more GIFs, says “bro” more often, tells unwanted dating stories, and performs carelessness so loudly that the performance becomes visible.
-- Derek’s silence and changed tone feel like daily accusations because Paul already knows the verdict.
-- Paul finally explodes that Derek brings it up every day and treats him like a vile rapist.
-- Derek answers that he has not mentioned it in weeks. The prosecution has been happening inside Paul’s mind.
-- Cornered by a judgment Derek has not voiced, Paul collapses into sobbing rage and attacks Derek’s hypocrisy.
-- Paul’s language betrays him: **“the girl I did it to.”** While denying responsibility, he describes an act perpetrated against her.
-- Paul argues that Felicia does not matter because her life was already difficult, she had children by unknown fathers, was expelled, and had never experienced non-forced sex. He tries to prove she was an acceptable person to rape.
-- Paul lacks the empathy and maturity to turn this rupture into accountability. Felicia remains evidence in Paul’s trial against himself rather than a person whose suffering he can center.
-- Paul ends the meltdown with **“She doesn’t fucking matter. You know what? I’m fucking done,”** storms out, and prevents Derek from responding.
-- The following day Paul takes a **mental health day**, describing the confrontation as unexpectedly hostile and making himself the person officially requiring recovery.
-- After rereading his pre-meeting email, Paul realizes every phrase now looks like evidence of intent. He sweats, cries involuntarily, grabs the office wastebasket, and vomits.
+- He cannot stop replaying his false tenderness, Felicia’s clear refusal, his own pleasure, the possibility that refusal excited him, the awkward aftermath, and his half-dressed flight. His usual escape hatch—turning everything into a joke—no longer works. He sends more GIFs, says “bro” more often, tells unwanted dating stories, and performs carelessness so loudly that the performance becomes visible.
+- Derek’s silence and changed tone feel like daily accusations because Paul already knows the verdict. Paul finally explodes that Derek brings it up every day and treats him like a vile rapist. Derek answers that he has not mentioned it in weeks. The prosecution has been happening inside Paul’s mind.
+
+- Paul argues that Felicia does not matter because her life was already difficult, she had children by unknown fathers, was expelled, and had never experienced non-forced sex. He tries to prove she was an acceptable person to rape. He ends the meltdown with **“She doesn’t fucking matter. You know what? I’m fucking done,”** storms out, and prevents Derek from responding.
+- The following day Paul takes a **mental health day**, describing the confrontation as unexpectedly hostile and making himself the person officially requiring recovery. After rereading his pre-meeting email, Paul realizes every phrase now looks like evidence of intent. He sweats, cries involuntarily, grabs the office wastebasket, and vomits.
 - His horror is still self-centered: he wrote it beforehand, Derek has a copy, he became “one of those guys,” and he cannot control what the fact means about him.
-- Paul attempts to delete the email and then tries to hack Derek’s laptop or account to remove Derek’s copy.
-- He is not technically skilled. Security alerts, failed access, audit trails, wrong deletions, backups, and archived issue histories create even more evidence of consciousness of guilt.
 - Derek increasingly regards Paul as an undignified, sad child. Derek’s superiority rests on managing the same dehumanizing arousal without creating visible chaos or liability.
-- Paul eventually throws Derek’s doctrine back at him: Derek repeatedly said men have an unconditional natural right to use women’s bodies, then condemns Paul only when someone acts on it.
-- Derek’s likely distinction is between moral right and operational judgment: Paul converted philosophy into criminal exposure for himself and the program.
-- Paul is correct about Derek’s hypocrisy but invokes it to demand retroactive absolution, not to recognize Felicia’s humanity.
+- Paul eventually throws Derek’s doctrine back at him: Derek repeatedly said men have an unconditional natural right to use women’s bodies, then condemns Paul only when someone acts on it. Derek’s likely distinction is between moral right and operational judgment: Paul converted philosophy into criminal exposure for himself and the program.
 
-## 16. Paul disappears and becomes an absence
 
-- Paul is not ultimately killed. Ashly’s canonical choice is that he flees the state and goes into hiding.
-- Paul calls out from his day job and never returns, abandons most possessions, withdraws cash, changes his number again, and leaves without a coherent destination.
+## 16. Paul Flees the State and Lays Low
+
+- Paul flees the state and goes into hiding. He calls out from his day job and never returns, abandons most possessions, withdraws cash, changes his number again, and leaves without a coherent destination.
 - He may preserve the contactless business cards and continue describing himself under an alias as a former Executive Producer.
 - His only message to Derek may be: **“Need to disappear for a while, bro.”**
 - Paul continues checking the podcast and Felicia’s issue anonymously while telling himself he fled because Derek betrayed him rather than because he knows what he did.
-- Derek keeps using Paul’s email account to answer listeners so the audience believes the show still has an Executive Producer.
-- Regular listeners notice that “Paul” no longer uses GIFs or “bro,” suddenly has correct punctuation, writes in Derek’s stiff voice, and agrees with every editorial decision.
-- A listener eventually writes: **“Paul, blink twice if Derek has killed you.”** Derek labels the message irrelevant.
-- New guests, advisers, volunteers, and temporary collaborators enter the story, but none is treated as a direct replacement for Paul.
-- Two years later, the sorority woman from Paul’s one-night stand leaves another tipsy voicemail. She thinks she saw “Mr. Executive Producer” being arrested on television in Tennessee, though the report did not explain why.
-- The Tennessee offense initially remains unknown. Derek cannot tell whether authorities are interested in the new crime, Felicia, Paul’s attempted account intrusion, other women, the podcast, or all of it.
-- Derek begins purging Paul’s material under the administrative label **“revoking former contractor access.”**
-- Because the deletion begins immediately after Derek learns of the arrest, his cleanup looks like selective evidence destruction and consciousness of guilt.
-- The archive cannot truly be erased: Git histories, issue histories, email notifications, Felicia’s copies, screenshots, Paul’s files, and sorority archives create redundant evidence.
-- Derek’s two years of impersonating Paul create a new problem. Investigators can no longer easily distinguish Paul’s messages from Derek’s messages written under Paul’s identity.
-- Paul’s ultimate production contribution is turning a twelve-listener fictional media empire into a sprawling potential evidence network.
+- Derek keeps using Paul’s email account to answer listeners so the audience believes the show still has an Executive Producer. Regular listeners notice that “Paul” no longer uses GIFs or “bro,” suddenly has correct punctuation, writes in Derek’s stiff voice, and agrees with every editorial decision. A listener eventually writes: **“Paul, blink twice if Derek has killed you.”** Derek labels the message irrelevant.
+- Two years later, the sorority woman from Paul’s one-night stand leaves another tipsy voicemail. She thinks she saw “Mr. Executive Producer” being arrested on television in Tennessee, though the report did not explain why. Whatever Paul's charges are, Derek cannot tell whether authorities are interested in the new crime, Felicia, Paul’s attempted account intrusion, other women, the podcast, or all of it.
+- Derek begins purging Paul’s material under the administrative label **“revoking former contractor access.”** Because the deletion begins immediately after Derek learns of the arrest, his cleanup looks like selective evidence destruction and consciousness of guilt.
+
+- Derek’s two years of impersonating Paul create a new problem. Investigators can no longer easily distinguish Paul’s messages from Derek’s messages written under Paul’s identity. Paul’s ultimate production contribution is turning a twelve-listener fictional media empire into a sprawling potential evidence network.
 
 ## 17. Derek and Paul’s crude flowcharts
 
@@ -311,15 +262,4 @@ Derek repeatedly frames disputes as **natural versus unnatural**, not right vers
 - Their **“Do You Need to Replace Your Wife?”** flowchart asks whether she is over thirty. If yes, replace her. If no, it asks whether she will eventually turn thirty. If yes, replace her; if no, she is probably dead, so replace her anyway.
 - Derek supplies the misogynistic premise and Paul identifies the dead-wife edge case. Together they create a decision tool in which **REPLACE HER** is mathematically unavoidable.
 
-## 18. Recurring comic logic and continuity rules
 
-- Derek converts every contradiction into a distinction, every missing fact into a hypothetical, and every challenge into evidence of the challenged phenomenon.
-- A man must actually fail repeatedly and remains an individual. A woman can fail hypothetically and indict her entire sex.
-- Derek’s public professionalism is not morality. It is controlled cruelty, institutional self-image, and avoidance of reputational disorder.
-- Paul’s professionalism is a costume he can wear perfectly with outsiders and discard instantly in private.
-- Paul is funniest when he obeys Derek’s exact language, exposes its absurdity, and lets Derek interpret sabotage as loyalty.
-- Derek believes Paul is a disciple. Paul regards Derek as a source of a title, access, spectacle, and endlessly renewable comedy.
-- Every supposedly tiny institution has excessive infrastructure: formal procedures, statuses, dashboards, email threads, spreadsheets, interview generators, three thousand cards, and almost no audience.
-- The podcast’s bureaucracy preserves the very evidence Derek and Paul most need forgotten.
-- Women repeatedly understand the men more clearly than the men understand themselves: Janessa’s group turns Derek into entertainment, the sorority woman intends to ghost Paul, callers use Derek’s premises against him, and Felicia’s existence exposes the real human cost beneath the doctrine.
-- The comedy works brightest when one collaborator establishes a logical or character premise and the other carries it one step further into both inevitability and absurdity.
