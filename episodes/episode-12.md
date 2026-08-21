@@ -1,3 +1,9 @@
+---
+title: "WHAT TO DO WHEN YOUR WIFE AGES OUT"
+category: broadcast
+tags: [gender, sex, marriage, reproduction]
+---
+
 ## What to do When Your Wife Ages Out
 
 Marriage is supposed to last a lifetime. Unfortunately, a woman’s ability to perform every function associated with marriage does not.
