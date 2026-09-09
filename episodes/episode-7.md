@@ -1,10 +1,14 @@
 ---
-title: "A REAL-LIFE STORY OF FEMININE RESTORATION"
-category: interview
-tags: [femininity, gender, women, guest]
+episode_title: A REAL-LIFE STORY OF FEMININE RESTORATION
+episode_category: interview
+tags:
+  - femininity
+  - gender
+  - women
+  - guest
 ---
 
-# EPISODE 7: A REAL-LIFE STORY OF FEMININE RESTORATION
+## EPISODE 7: A REAL-LIFE STORY OF FEMININE RESTORATION
 
 Welcome to The Misogyny Podcast, today we have a guest speaker and my listeners will probably sneer at the fact that this guest happens to be female.
 

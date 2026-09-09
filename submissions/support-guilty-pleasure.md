@@ -1,6 +1,6 @@
 ### Name, handle, or suspiciously new account
 
-GuiltyPleasure
+`GuiltyPleasure`
 
 ### Your message for Derek
 
@@ -13,10 +13,10 @@ GuiltyPleasure
 ```text
 Greetings Derek!
 
-My sorority sisters and I have started getting together once a week 
-to listen to your latest podcast episode. 
+My sorority sisters and I have started getting together once a week to listen to your latest podcast episode. 
 
 We order food and make drinks and yell at you through most of it LOL. 
+
 Sometimes we have to rewind because everybody is talking over you.
 
 I’ll be honest, most of them really hate your guts. Like, a lot. 
@@ -31,11 +31,9 @@ but I kind of like you?
 
 Or I kind of like how honest you are. Maybe both. 
 
-I would absolutely never say that in front of my friends because 
-they would probably hold an intervention.
+I would absolutely never say that in front of my friends because they would probably hold an intervention.
 
-So I just wondered if you’re single. And if you are, whether 
-you might want to go out sometime...?
+So I just wondered if you’re single. And if you are, whether you might want to go out sometime...?
 
 Please don’t read this on the show unless your answer is yes. 
 
@@ -48,7 +46,7 @@ P.S. I’m prettier than this email makes me sound.
 
 ### How has the show changed your life?
 
-_No response_
+`_No response_`
 
 ### Permission
 

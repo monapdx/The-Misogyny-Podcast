@@ -1,0 +1,228 @@
+{
+  "main": {
+    "id": "a88284a781acb192",
+    "type": "split",
+    "children": [
+      {
+        "id": "70e5f1ab5bd53cfa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "555ace7f18e91ca6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The Misogyny Podcast.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "The Misogyny Podcast"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "76cf346e774727c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "2908772075206fea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "457fbb9f1d7abfd0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a5b56d5ebced8f6e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "[\"title\"]",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "765098b7d6a4675b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "a97d4e2c6c8efb7b",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab8bfe27c3924ab2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e05b863bbee196b1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "submissions/hatemail.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "c6207d54b9c63014",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "submissions/hatemail.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "7515f73ffa948282",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f93b64ed305d9ab1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "5913c6ca3467cc2c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "submissions/hatemail.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "555ace7f18e91ca6",
+  "lastOpenFiles": [
+    "Sponsors & Advertisements.md",
+    "Sarah's Husband.md",
+    "Untitled.md",
+    "manifesto/Misogyny Podcast Canon and Event Map (My Version).md",
+    "manifesto/Misogyny-Podcast-Dialogue-Archive.md",
+    "Characters.md",
+    "FAQ.md",
+    "Frontmatter Normalization Report.md",
+    "Misogyny Podcast Canon and Event Map.md",
+    "manifesto/lists.md",
+    "manifesto/Fictional Podcaster.md",
+    "manifesto/corporate.md",
+    "submissions/guest-pitch-dr-alters.md",
+    "submissions/by-your-own-logic.md",
+    "submissions/challenge-university-student.md",
+    "submissions/guest-pitch-master-manipulator-of-women.md",
+    "submissions/hatemail.md",
+    "submissions/question-need-god-and-guidance.md",
+    "submissions/question-seeking-motherhood.md",
+    "submissions/support-women-are-the-problem.md",
+    "submissions/the-clitoris-is-NOT-vestigial.md",
+    "The Misogyny Podcast.md",
+    "assets/podcast-logo.png",
+    "manifesto/Unconfirmed 576648.crdownload",
+    "assets/paul-business-cards/paul-as-heard-on.png",
+    "assets/Female-Listeners-in-Love-With-Derek-08-15-2026_12_42_AM.png",
+    "assets/image (6).png",
+    "assets/mic.gif",
+    "assets/paul-response-with-gif-2.gif",
+    "submissions/support-guilty-pleasure.md",
+    "episodes/episode-1.md",
+    "episodes/episode-2.md",
+    "assets/flowcharts/Forced-Surrogacy-Conscript-Assessment-—-Flowchart-08-15-2026_12_41_AM.png"
+  ]
+}

@@ -1,10 +1,14 @@
 ### Email
 
-krodha@amiyah.cloud
+`krodha@amiyah.cloud`
 
 ### Derek's claim
 
+`
+```
 Women who choose careers over motherhood and marriage can’t prefer that over things they have never experienced.
+```
+`
 
 |              |                                        |
 | ------------ | -------------------------------------- |
@@ -13,14 +17,13 @@ Women who choose careers over motherhood and marriage can’t prefer that over t
 | **Subject:** |  By Your Own Logic...                                      |
 
 ```text
-If women who choose careers over motherhood can't prefer it without having 
-experienced being mothers, does that mean you've had homosexual sex to be 
-sure that you're heterosexual? Did you spend time in jail to figure out that you 
-prefer freedom? You seem to apply your logic selectively.
+If women who choose careers over motherhood can't prefer it without having experienced being mothers, does that mean you've had homosexual sex to be sure that you're heterosexual? Did you spend time in jail to figure out that you prefer freedom? You seem to apply your logic selectively.
 ```
 ### Sources or supporting material
 
-Derek's assumed answers to my questions.
+`Derek's assumed answers to my questions.`
+
+
 
 ### Permission
 

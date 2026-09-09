@@ -1,10 +1,15 @@
 ---
-title: "GARY’S DILEMMA"
-category: interview
-tags: [interview, marriage, dating, relationships, infertility]
+episode_title: GARY’S DILEMMA
+episode_category: interview
+tags:
+  - interview
+  - marriage
+  - dating
+  - relationships
+  - infertility
 ---
 
-# EPISODE 3: GARY’S DILEMMA
+## EPISODE 3: GARY’S DILEMMA
 
 <img src="../assets/episode-3-quote.gif">
 

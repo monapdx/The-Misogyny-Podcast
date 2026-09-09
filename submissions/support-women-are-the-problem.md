@@ -1,9 +1,11 @@
 ### Name, handle, or suspiciously new account
 
-DONE WITH THESE BITCHES
+`DONE WITH THESE BITCHES`
 
 ### Your message for Derek
 
+
+```
 DEREK,
 
 NO MATTER WHAT I DO FOR A GIRL, THEY REFUSE TO LET ME HAVE SEX WITH THEM.
@@ -18,6 +20,8 @@ PLEASE TELL ME WHAT I SHOULD DO TO GET THE SEX I'VE SO FAR BEEN SCREWED OUT OF C
 
 YOUR FRIEND,
 TYRONE
+```
+
 
 ### How has the show changed your life?
 
@@ -34,8 +38,7 @@ _No response_
 | **Subject:** |  Fwd: WOMEN ARE THE PROBLEM |
 
 ```text
-Please help this man get laid before he 
-shoots up a school or something LOL
+Please help this man get laid before he shoots up a school or something LOL
 
 -Paul Emerson
 Executive Producer
@@ -51,19 +54,12 @@ The Misogyny Podcast
 ```text
 Paul,
 
-I know you're trying to be funny here,
-but this isn't a joke. You do know that 
-there have been actual cases of mass 
-shootings and violence caused by
-exactly what this man is suffering 
-through, right? I certainly hope so.
+I know you're trying to be funny here, but this isn't a joke. You do know that 
+there have been actual cases of mass shootings and violence caused by exactly what this man is suffering through, right? I certainly hope so.
 
-I want to take this one seriously,
-because there is a real chance of
-violence or harm to others in real life.
+I want to take this one seriously, because there is a real chance of violence or harm to others in real life.
 
-Let's treat this with the respect it
-actually deserves.
+Let's treat this with the respect it actually deserves.
 
 -Derek
 ```
@@ -77,8 +73,7 @@ actually deserves.
 ```text
 Okay, okay. Geez.
 
-When did you become such a fucking
-do-gooder, anyways?
+When did you become such a fucking do-gooder, anyways?
 
 You're no fun, boss. LOL.
 ```

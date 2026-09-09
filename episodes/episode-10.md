@@ -1,8 +1,16 @@
 ---
-title: "WHY OUR COUNTRY NEEDS A MANDATORY SURROGACY DRAFT"
-category: broadcast
-tags: [military, government, reproduction, gender,  marriage, surrogacy]
+episode_title: WHY OUR COUNTRY NEEDS A MANDATORY SURROGACY DRAFT
+episode_category: broadcast
+tags:
+  - military
+  - government
+  - reproduction
+  - gender
+  - marriage
+  - surrogacy
 ---
+
+## THE UNTAPPED RESOURCE OF UNUSED WOMBS
 
 Back in **[Episode 3](EPISODE%203.md)**, we had a guest named Gary who called in to discuss how to best solve a difficult relationship situation he found himself in. Gary had recently proposed to what sounded like the perfect woman: she understood her place, wanted the same things he wanted, and fully submitted to him in every way.
 
@@ -13,8 +21,6 @@ My advice to him might have sounded harsh to some listeners back when that episo
 As I pointed out to him at the time, they may have been able to work around that (admittedly huge) shortcoming if Gary already had children from another woman. Sadly, he did not. 
 
 But what if there is another option for couples like them?
-
-## THE UNTAPPED RESOURCE OF UNUSED WOMBS
 
 Every year, thousands of otherwise healthy women go about their lives possessing fully functional reproductive systems they have no intention of using. Some claim they are *“not ready.”* Others insist they do not want children at all. Still others waste their most fertile years pursuing degrees, promotions, travel, or the vague project modern women call *finding themselves*.
 
@@ -44,7 +50,7 @@ This is also why donated eggs should be avoided whenever possible. If the object
 
 The ideal carrier would understand the dignity of her temporary position without mistaking it for membership in the family.
 
-## PREGNANCY AS A FORM OF NATIONAL SERVICE
+### PREGNANCY AS A FORM OF NATIONAL SERVICE
 
 Predictably, critics will call this proposal *“forced pregnancy.”* That phrase is designed to end the discussion before it begins. Serious people should call it what it is: reproductive national service.
 

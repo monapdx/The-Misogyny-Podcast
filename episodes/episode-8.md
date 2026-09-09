@@ -1,10 +1,13 @@
 ---
-title: "EVERYTHING YOU THINK YOU KNOW ABOUT SEX IS WRONG"
-category: broadcast
-tags: [sex, gender, liberalism]
+episode_title: EVERYTHING YOU THINK YOU KNOW ABOUT SEX IS WRONG
+episode_category: broadcast
+tags:
+  - sex
+  - gender
+  - liberalism
 ---
 
-# EPISODE 8: EVERYTHING YOU THINK YOU KNOW ABOUT SEX IS WRONG
+## EPISODE 8: EVERYTHING YOU THINK YOU KNOW ABOUT SEX IS WRONG
 
 Sex is probably the one subject every adult believes they understand simply because they have done it.
 
@@ -16,7 +19,7 @@ We are going to begin with the body, move into reproduction, talk honestly about
 
 Some listeners will find this episode upsetting. That is fine. Discomfort is often what happens when a comforting lie collides with an observable fact.
 
-## THE BODY SETTLES THE ARGUMENT
+### THE BODY SETTLES THE ARGUMENT
 
 Male and female bodies are not competing versions of the same design. They are complementary, unequal systems built to perform different jobs.
 
@@ -34,7 +37,7 @@ The clitoris, which we discussed in detail in a previous episode, has confused g
 
 When nature makes one orgasm essential and the other irrelevant, it is telling us something. Modern society simply refuses to listen.
 
-## SEX HAS A PURPOSE
+### SEX HAS A PURPOSE
 
 The purpose of sex is reproduction.
 
@@ -48,7 +51,7 @@ The body does not care about identity. It does not care about politics. It does 
 
 Sex creates children. Everything else is decoration.
 
-## SEXUAL HISTORY DOES NOT AFFECT MEN AND WOMEN EQUALLY
+### SEXUAL HISTORY DOES NOT AFFECT MEN AND WOMEN EQUALLY
 
 One of the most destructive lies of sexual liberalism is that having many sexual partners affects men and women in the same way.
 
@@ -68,7 +71,7 @@ Of course it is unfair. Biology is full of unfair arrangements. Men are expected
 
 Women do not object to unfairness when it benefits them. They object when unfairness comes with standards.
 
-## WHAT MARRIAGE ACTUALLY GUARANTEES
+### WHAT MARRIAGE ACTUALLY GUARANTEES
 
 Marriage was not created as a public celebration of romantic feelings. It was created to establish ownership, obligation, sexual access, legitimate offspring, and an orderly household.
 
@@ -86,7 +89,7 @@ A vow is supposed to settle questions, not create a lifelong series of applicati
 
 If a woman wants complete sexual independence from a man, the solution is simple: do not marry him and demand that he organize his life around supporting you.
 
-## THE INVENTION OF “DATE RAPE”
+### THE INVENTION OF “DATE RAPE”
 
 Now we arrive at one of the most dishonest phrases in the modern sexual vocabulary: “date rape.”
 

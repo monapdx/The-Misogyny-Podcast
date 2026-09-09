@@ -1,7 +1,12 @@
 ---
-title: "WOMEN IN THE MILITARY"
-category: broadcast
-tags: [military, government, reproduction, combat, gender]
+episode_title: WOMEN IN THE MILITARY
+episode_category: broadcast
+tags:
+  - military
+  - government
+  - reproduction
+  - combat
+  - gender
 ---
 
 
@@ -24,7 +29,7 @@ Today, however, we are told that excluding women from combat is insulting. Appar
 It is difficult to imagine a more complete misunderstanding of equality.
 
 Men and women may possess equal human worth, but they do not possess identical bodies, identical reproductive functions, or identical responsibilities to society. A military designed around political symbolism rather than biological reality will eventually discover that enemy fire does not care about representation.
-## WHY COMBAT IS MEN’S WORK
+### WHY COMBAT IS MEN’S WORK
 
 Combat is not an athletic event designed to provide everyone with an opportunity to participate. Its purpose is to defeat an enemy.
 
@@ -56,7 +61,7 @@ In most cases, those soldiers will be men.
 This is the part excluded from triumphant stories about women breaking barriers. We are shown the woman who was admitted, promoted, or celebrated. We are not shown the men quietly carrying whatever portion of the burden the institution decided no longer needed to be measured.
 
 A combat unit is not strengthened by pretending physical disparities disappear once everyone wears the same uniform.
-## A DIFFERENT KIND OF NATIONAL SERVICE
+### A DIFFERENT KIND OF NATIONAL SERVICE
 
 Opposing women in combat does not mean believing women owe nothing to their country.
 

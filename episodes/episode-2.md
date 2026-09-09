@@ -1,10 +1,14 @@
 ---
-title: "SANCTITY OF MARRIAGE & MOTHERHOOD"
-category: podcast
-tags: [women, pregnancy, motherhood, marriage]
+episode_title: SANCTITY OF MARRIAGE & MOTHERHOOD
+episode_category: podcast
+tags:
+  - women
+  - pregnancy
+  - motherhood
+  - marriage
 ---
 
-# EPISODE 2: SANCTITY OF MARRIAGE & MOTHERHOOD
+## EPISODE 2: SANCTITY OF MARRIAGE & MOTHERHOOD
 
 <img align="center" src="../assets/episode-2-quote.gif">
 

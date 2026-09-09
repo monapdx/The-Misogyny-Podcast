@@ -1,10 +1,14 @@
 ---
-title: "A CASE AGAINST THE CLITORIS"
-category: broadcast
-tags: [sex, anatomy, gender, women]
+episode_title: A CASE AGAINST THE CLITORIS
+episode_category: broadcast
+tags:
+  - sex
+  - anatomy
+  - gender
+  - women
 ---
 
-# EPISODE 6: A CASE AGAINST THE CLITORIS
+## EPISODE 6: A CASE AGAINST THE CLITORIS
 
 Okay, so my regular listeners might remember that a couple episodes ago here on the podcast, I talked about the mental illness of homosexuality and advocated for clitoral removal as a safe, sane measure to take in order to ensure healthy sexual behavior from women.
 

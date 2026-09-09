@@ -1,10 +1,14 @@
 ---
-title: "Dr. Alters Interview"
-category: interview
-tags: [gender, marriage, attraction, plastic surgery]
+episode_title: Dr. Alters Interview
+episode_category: interview
+tags:
+  - gender
+  - marriage
+  - attraction
+  - plastic surgery
 ---
 
-### Dr. Alters Interview Part 1
+## Dr. Alters Interview Part 1
 
 Greetings listeners, it's Derek Vale, your host of the Misogyny Podcast.
 
@@ -194,7 +198,7 @@ HOST: Beautifully put. Stay with us. When we return, Dr. Alters will tell us abo
 
 
 ---
-### Dr. Alters Interview Part 2
+## Dr. Alters Interview Part 2
 
 HOST: Welcome back, listeners. I’m speaking with Dr. Alters of the Weird Science Surgical Group, where women are encouraged to stop treating preventable decline as a personality trait.
 

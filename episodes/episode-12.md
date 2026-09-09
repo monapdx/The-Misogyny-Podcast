@@ -1,7 +1,11 @@
 ---
-title: "WHAT TO DO WHEN YOUR WIFE AGES OUT"
-category: broadcast
-tags: [gender, sex, marriage, reproduction]
+episode_title: WHAT TO DO WHEN YOUR WIFE AGES OUT
+episode_category: broadcast
+tags:
+  - gender
+  - sex
+  - marriage
+  - reproduction
 ---
 
 ## What to do When Your Wife Ages Out
@@ -15,7 +19,7 @@ But loyalty does not require blindness.
 A responsible husband understands that marriage is not merely an emotional attachment. It is a functioning household organized around complementary roles. When one member can no longer perform all the duties attached to her original position, the answer is neither cruelty nor divorce. It is restructuring.
 
 A wife who has aged out should not necessarily be discarded. In many cases, she remains valuable. Her value has simply changed departments.
-## IDENTIFYING THE END OF HER USEFUL YEARS
+### IDENTIFYING THE END OF HER USEFUL YEARS
 
 There is no single age at which every woman becomes unsuitable for her original marital role. Aging does not occur on an exact schedule, and some women preserve themselves more responsibly than others. A husband should therefore evaluate performance rather than rely exclusively on a birthday.
 
@@ -30,7 +34,7 @@ This is where many older wives retain considerable value. They may no longer be 
 The question is not whether she remains useful.
 
 The question is whether she remains useful as a wife in the original sense.
-## THE ETHICAL CASE FOR A YOUNGER SECOND WIFE
+### THE ETHICAL CASE FOR A YOUNGER SECOND WIFE
 
 When a company discovers that one employee can no longer perform every function contained in her original job description, it does not necessarily fire her. A well-managed company transfers her into a position better suited to her present abilities and hires someone capable of performing the remaining work.
 
@@ -49,7 +53,7 @@ Naturally, the younger wife must be selected carefully. Youth alone is insuffici
 She should also recognize the temporary nature of youth. One day, she too will age out of reproductive service. By respecting the first wife’s new position, she helps establish the arrangement that will protect her when her own transition becomes necessary.
 
 This is not competition. It is succession planning.
-## AN HONORABLE TRANSITION INTO DOMESTIC SUPPORT
+### AN HONORABLE TRANSITION INTO DOMESTIC SUPPORT
 
 The first wife should not interpret reassignment as humiliation. She should view it as a promotion from active wife to Senior Domestic Wife.
 

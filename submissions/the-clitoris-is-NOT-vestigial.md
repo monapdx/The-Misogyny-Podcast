@@ -1,10 +1,10 @@
 ### Email
 
-sam.stockton@langford.edu
+`sam.stockton@langford.edu`
 
 ### Derek's claim
 
-The clitoris was a leftover vestigial organ
+`The clitoris was a leftover vestigial organ`
 
 ### Your response
 
@@ -16,10 +16,7 @@ The clitoris was a leftover vestigial organ
 
 
 ```text
-This is patently false. As an organ, the clitoris has a clear function, which it performs 
-quite effectively; with over 10,000 nerve endings, it is the primary organ for producing 
-female sexual pleasure. Current science does NOT support your claim that it is being 
-phased out by evolution. 
+This is patently false. As an organ, the clitoris has a clear function, which it performs quite effectively; with over 10,000 nerve endings, it is the primary organ for producing female sexual pleasure. Current science does NOT support your claim that it is being phased out by evolution. 
 ```
 -Dr. Samuel Stockton, PhD
 **Professor of Anatomy and Reproductive Biology**
@@ -30,8 +27,7 @@ phased out by evolution.
 
 ### Sources or supporting material
 
-[https://my.clevelandclinic.org/health/body/22823-clitoris](https://my.clevelandclinic.org/health/body/22823-clitoris)
-
+`[https://my.clevelandclinic.org/health/body/22823-clitoris]`
 ### Permission
 
 - [x] Derek may respond to this fictional submission in a future episode, even if he responds badly.
