@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 episode_title: Dr. Alters Interview
 episode_category: interview
@@ -7,6 +8,9 @@ tags:
   - attraction
   - plastic surgery
 ---
+=======
+
+>>>>>>> parent of 58a2cc0 (Merge branch 'main' of https://github.com/monapdx/The-Misogyny-Podcast)
 
 ## Dr. Alters Interview Part 1
 
