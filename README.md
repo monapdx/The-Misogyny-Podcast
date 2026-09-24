@@ -38,6 +38,7 @@ I do ask that you please see the **[FAQ](FAQ.md)** before leaving a nasty voice 
 |           8 | [EVERYTHING YOU THINK YOU KNOW ABOUT SEX IS WRONG](./episodes/episode-8.md)   |
 |           9 | [WOMEN IN THE MILITARY](./episodes/episode-9.md)                              |
 |          10 | [WHY OUR COUNTRY NEEDS A MANDATORY SURROGACY DRAFT](./episodes/episode-10.md) |
+|          11 | [DR. ALTERS GUEST INTERVIEW](./episodes/episode-11.md) |
 
 <!-- EPISODES_TABLE_END -->
 
