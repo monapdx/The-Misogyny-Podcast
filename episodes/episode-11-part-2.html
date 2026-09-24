@@ -58,8 +58,8 @@
       line-height: 1.7;
       box-shadow: 6px 6px 0 #202024;
     }
-    .host .bubble { background: #e8f4ff; border-bottom-right-radius: 5px; }
-    .guest .bubble { background: #f3eeff; border-bottom-left-radius: 5px; }
+    .host .bubble { background: #c7d5ff; border-bottom-right-radius: 5px; }
+    .guest .bubble { background: #ffc9d7; border-bottom-left-radius: 5px; }
     .message p { margin: 0; }
     .message + .message { margin-top: .35rem; }
     @media (max-width: 600px) {
@@ -69,6 +69,17 @@
     @media print { .message { break-inside: avoid; } }
   
     .message .bubble p + p { margin-top: 0.9rem; }
+    @media screen and (prefers-reduced-motion: no-preference) {
+      .message.reveal-pending {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: opacity 650ms ease, transform 650ms ease;
+      }
+      .message.reveal-pending.revealed {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
     .stage-direction {
       align-self: center;
       max-width: 78%;
@@ -668,5 +679,26 @@
     <div class="bubble"><p><strong>Derek:</strong> There you have it, listeners: one of the few remaining doctors willing to treat a woman’s appearance as the shared marital responsibility it obviously is.</p><p>If you’re a husband listening to this and thinking, “Derek, my wife would never agree to any of that,” don’t panic. Next week, we’ll discuss how to distinguish a genuine medical anxiety from ordinary female resistance—and why giving her too much time to “think about it” may be the worst thing you can do.</p><p>And to the women already drafting angry messages about today’s interview: please use the correct submission form. Paul says reorganizing your outrage after you send it is becoming a full-time job.</p><p>This has been Derek Vale, reminding you that accepting reality is always cheaper than correcting it—unless you wait too long.</p><p>I’ll see you next time.</p></div>
   </div>
   </div>
+  <script>
+    if ('IntersectionObserver' in window &&
+        window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+      const messages = document.querySelectorAll('.chat .message');
+      const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        }
+      }, { threshold: 0.08, rootMargin: '0px 0px 40px 0px' });
+
+      for (const message of messages) {
+        if (message.getBoundingClientRect().top > window.innerHeight) {
+          message.classList.add('reveal-pending');
+          observer.observe(message);
+        }
+      }
+    }
+  </script>
 </body>
 </html>

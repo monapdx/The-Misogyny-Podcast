@@ -29,8 +29,8 @@
       line-height: 1.7;
       box-shadow: 6px 6px 0 #202024;
     }
-    .host .bubble { background: #e8f4ff; border-bottom-right-radius: 5px; }
-    .guest .bubble { background: #f3eeff; border-bottom-left-radius: 5px; }
+    .host .bubble { background: #c7d5ff; border-bottom-right-radius: 5px; }
+    .guest .bubble { background: #ffc9d7; border-bottom-left-radius: 5px; }
     .message p { margin: 0; }
     .message + .message { margin-top: .35rem; }
     @media (max-width: 600px) {
@@ -40,6 +40,17 @@
     @media print { .message { break-inside: avoid; } }
   
     .message .bubble p + p { margin-top: 0.9rem; }
+    @media screen and (prefers-reduced-motion: no-preference) {
+      .message.reveal-pending {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: opacity 650ms ease, transform 650ms ease;
+      }
+      .message.reveal-pending.revealed {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
     .stage-direction {
       align-self: center;
       max-width: 78%;
@@ -50,8 +61,9 @@
     .stage-direction p { margin: 0; }
 </style>
 </head>
-
 <body id="preview">
+  <h1></h1>
+  <div class="chat">
   <h1></h1>
   <div class="chat">
   <div class="message host">
