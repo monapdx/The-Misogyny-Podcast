@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Derek & Paul | The Misogyny Podcast</title>
+  <style>
+    :root { color-scheme: light; --ink:#202024; --derek:#c7d5ff; --paul:#ffc9d7; --paper:#f8f6f1; }
+    * { box-sizing:border-box; }
+    body { margin:0; padding:clamp(12px,3vw,36px); background:#e9e9e9; color:#373d49; font:16px/1.5 Georgia,Cambria,serif; }
+    .shell { width:min(100%,800px); margin:auto; border:3px solid var(--ink); box-shadow:8px 8px 0 var(--ink); background:var(--paper); }
+    header { display:flex; align-items:center; gap:12px; padding:15px 20px; border-bottom:3px solid var(--ink); background:#fff; }
+    .avatar { width:42px; height:42px; display:grid; place-items:center; border:2px solid var(--ink); border-radius:50%; background:#dab5ff; font:700 15px/1 Arial,sans-serif; }
+    h1 { margin:0; font:800 clamp(18px,3vw,24px)/1.1 Arial,sans-serif; }
+    .sub { margin:4px 0 0; color:#64616b; font:13px Arial,sans-serif; }
+    .thread { min-height:min(62vh,580px); max-height:72vh; overflow-y:auto; overscroll-behavior:contain; padding:26px clamp(14px,4vw,30px); display:flex; flex-direction:column; gap:18px; scroll-behavior:smooth; }
+    .thread { scrollbar-width:auto; scrollbar-color:#5d55d9 #e5def4; }
+    .thread::-webkit-scrollbar { width:15px; }
+    .thread::-webkit-scrollbar-track { background:#e5def4; border-left:3px solid var(--ink); }
+    .thread::-webkit-scrollbar-thumb { background:#dab5ff; border:3px solid var(--ink); border-radius:10px; }
+    .thread::-webkit-scrollbar-thumb:hover { background:#c2fc03; }
+    .message { display:flex; flex-direction:column; max-width:78%; align-self:flex-start; gap:5px; animation:pop .25s ease both; }
+    .message.derek { align-self:flex-end; }
+    .sender { font:700 12px Arial,sans-serif; letter-spacing:.03em; }
+    .derek .sender { text-align:right; }
+    .bubble { padding:12px 17px; border:3px solid var(--ink); border-radius:18px 18px 18px 5px; background:var(--paul); box-shadow:5px 5px 0 var(--ink); overflow-wrap:anywhere; }
+    .derek .bubble { background:var(--derek); border-radius:18px 18px 5px 18px; }
+    .bubble p { margin:0; }
+    .bubble p + p { margin-top:.8em; }
+    .typing { align-self:flex-start; display:flex; flex-direction:column; gap:5px; }
+    .typing.derek { align-self:flex-end; }
+    .typing[hidden] { display:none; }
+    .typing .bubble { display:flex; gap:5px; align-items:center; min-height:48px; }
+    .typing .bubble span { width:8px; height:8px; border-radius:50%; background:var(--ink); animation:pulse 1.2s infinite; }
+    .typing .bubble span:nth-child(2) { animation-delay:.16s; }
+    .typing .bubble span:nth-child(3) { animation-delay:.32s; }
+    .composer { display:flex; gap:12px; align-items:center; padding:15px 20px; background:#fff; border-top:3px solid var(--ink); }
+    .draft { flex:1; min-width:0; padding:12px 15px; border:2px solid var(--ink); border-radius:12px; color:#5d5963; background:#f8f6f1; font:14px Arial,sans-serif; }
+    button { cursor:pointer; padding:12px 20px; border:3px solid var(--ink); border-radius:10px; box-shadow:3px 3px 0 var(--ink); background:#c2fc03; color:var(--ink); font:800 14px Arial,sans-serif; }
+    button:hover { background:#dafa76; }
+    button:active { transform:translate(2px,2px); box-shadow:1px 1px 0 var(--ink); }
+    button:focus-visible { outline:3px solid #5d55d9; outline-offset:3px; }
+    .note { width:min(100%,800px); margin:18px auto 0; color:#555; font:13px/1.45 Arial,sans-serif; }
+    @keyframes pulse { 0%,60%,100% { opacity:.25; transform:translateY(0); } 30% { opacity:1; transform:translateY(-4px); } }
+    @keyframes pop { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+    @media (max-width:600px) { .message { max-width:90%; } .thread { max-height:70vh; min-height:55vh; } .composer { padding:12px; gap:8px; } button { padding:12px; } }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms !important; scroll-behavior:auto !important; } }
+    @media print { body { background:white; padding:0; } .shell { box-shadow:none; border:0; } .thread { max-height:none; overflow:visible; } .composer,.note,.typing { display:none !important; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header><div class="avatar" aria-hidden="true">D+P</div><div><h1>Derek & Paul</h1><p class="sub">The Misogyny Podcast · private messages</p></div></header>
+    <div class="thread" id="thread" role="log" aria-label="Conversation between Derek and Paul" aria-live="polite" aria-relevant="additions"></div>
+    <div class="composer"><div class="draft" id="draft" aria-hidden="true">Continue the conversation…</div><button id="send" type="button">Send <span aria-hidden="true">➜</span></button></div>
+  </main>
+  <p class="note">Tap Send to reveal the next message. The exchange is scripted; the visitor does not type a reply.</p>
+
+  <!-- TEMPLATE CONTENT: Add message blocks here. The first appears immediately; each Send click reveals the next. -->
+  <template id="conversation">
+    <div class="message paul"><div class="sender">Paul</div><div class="bubble">Derek, did you read the guest guidelines before sending that invitation?</div></div>
+    <div class="message derek"><div class="sender">Derek</div><div class="bubble">I wrote the guest guidelines.</div></div>
+    <div class="message paul"><div class="sender">Paul</div><div class="bubble">That was my concern.</div></div>
+    <div class="message derek"><div class="sender">Derek</div><div class="bubble">She has an interesting story, a sizable following, and the sort of opinions our listeners expect us to challenge.</div></div>
+    <div class="message paul"><div class="sender">Paul</div><div class="bubble">She also asked whether women are allowed to speak on the podcast.</div></div>
+    <div class="message derek"><div class="sender">Derek</div><div class="bubble">And I told her we would make an exception if she had something useful to say.</div></div>
+    <div class="message paul"><div class="sender">Paul</div><div class="bubble">You told her the exception was for scheduling.</div></div>
+    <div class="message derek"><div class="sender">Derek</div><div class="bubble">Exactly. We are extremely busy.</div></div>
+    <div class="message paul"><div class="sender">Paul</div><div class="bubble">You have no other guests booked this month.</div></div>
+    <div class="message derek"><div class="sender">Derek</div><div class="bubble">Then the schedule is unusually easy to protect.</div></div>
+  </template>
+
+  <script>
+    const messages = [...document.getElementById('conversation').content.querySelectorAll('.message')];
+    const thread = document.getElementById('thread');
+    const send = document.getElementById('send');
+    const draft = document.getElementById('draft');
+    const typing = document.createElement('div');
+    typing.className = 'typing';
+    typing.setAttribute('role','status');
+    typing.innerHTML = '<div class="sender"></div><div class="bubble" aria-hidden="true"><span></span><span></span><span></span></div>';
+    let index = 0;
+
+    function scrollToLatest() { thread.scrollTop = thread.scrollHeight; }
+    function showTyping() {
+      if (index >= messages.length) { typing.remove(); send.textContent = 'Start over'; draft.textContent = 'End of conversation'; return; }
+      const next = messages[index].querySelector('.sender')?.textContent.trim() || 'Someone';
+      typing.className = 'typing ' + (next.toLowerCase() === 'derek' ? 'derek' : 'paul');
+      typing.querySelector('.sender').textContent = next + ' is typing';
+      typing.setAttribute('aria-label', next + ' is typing');
+      thread.append(typing);
+      scrollToLatest();
+    }
+    function showMessage() {
+      const item = messages[index++];
+      typing.remove();
+      thread.append(item.cloneNode(true));
+      showTyping();
+    }
+    send.addEventListener('click', () => {
+      if (index === messages.length) { thread.replaceChildren(); index = 0; send.innerHTML = 'Send <span aria-hidden="true">➜</span>'; draft.textContent = 'Continue the conversation…'; showMessage(); return; }
+      showMessage();
+    });
+    if (messages.length) showMessage();
+    else { send.disabled = true; draft.textContent = 'Add HTML messages to the conversation to begin.'; }
+  </script>
+</body>
+</html>
