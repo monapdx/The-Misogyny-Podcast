@@ -81,6 +81,8 @@ def collect_episodes() -> list[Episode]:
         if not match:
             continue
         fields = read_frontmatter(path)
+        fields["title"] = fields.get("episode_title") or fields.get("title", "")
+        fields["category"] = fields.get("episode_category") or fields.get("category", "broadcast")
         if not fields.get("title"):
             raise ValueError(f"Missing frontmatter title in {path.relative_to(ROOT)}")
         episodes.append(Episode(
@@ -119,7 +121,7 @@ def build_episode_grid(episodes: list[Episode]) -> str:
         title = html.escape(display_title(episode.title))
         category = html.escape(display_title(episode.category))
         cards.extend([
-            f'        <a class="episode-card{card_accent(episode.number)}" href="{html.escape(episode.link)}">',
+            f'        <a class="episode-card{card_accent(episode.number)}" href="{html.escape(episode.link.removesuffix(".md") + ".html")}">',
             f'          <span class="episode-number">{episode.number:02d}</span>',
             f'          <span class="episode-type">{category}</span>',
             f'          <h3>{title}</h3>',
@@ -160,9 +162,14 @@ def update_archives() -> None:
     readme = replace_between(readme, README_START, README_END, build_readme_table(episodes))
     write_if_changed(README_PATH, readme)
 
+    # Publish only transcripts with an existing sibling HTML file.
+    published = [
+        episode for episode in episodes
+        if (ROOT / episode.link).with_suffix(".html").is_file()
+    ]
     index = INDEX_PATH.read_text(encoding="utf-8")
-    index = replace_between(index, GRID_START, GRID_END, build_episode_grid(episodes))
-    index = replace_between(index, COUNT_START, COUNT_END, episode_count_text(len(episodes)))
+    index = replace_between(index, GRID_START, GRID_END, build_episode_grid(published))
+    index = replace_between(index, COUNT_START, COUNT_END, episode_count_text(len(published)))
     write_if_changed(INDEX_PATH, index)
 
 
